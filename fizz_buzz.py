@@ -12,3 +12,4 @@ def fizz_buzz(num):
 
 
 fizz_buzz(100)
+fizz_buzz(50)
