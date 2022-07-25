@@ -5,5 +5,7 @@ print(course.upper())
 str_arr = course.split()
 print(str_arr)
 
+new_str = ''
 for word in str_arr:
-    print(word[0].upper() + word[1:])
+    new_str += word[0].upper() + word[1:] + ' '
+print(new_str)
