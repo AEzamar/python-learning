@@ -4,4 +4,4 @@ if(weather == 'hot'):
 elif(weather == 'cold'):
     print("Wear some warm clothes!")
 else:
-    print("It's a nice day!")
+    print("It's a lovely day!")
