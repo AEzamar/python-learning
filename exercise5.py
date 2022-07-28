@@ -1,5 +1,5 @@
 house_price = 1000000
-good_credit = True
+good_credit = False
 if(good_credit):
     print(f"{100000 * 100 / house_price}%")
 else:
