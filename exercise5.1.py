@@ -1,6 +1,6 @@
-high_income = True
 good_credit = True
-if(high_income and good_credit):
+criminal_record = True
+if good_credit and not criminal_record:
     print("You're elegigle for a loan")
 else:
     print("Sorry, we can't offer you a loan")
