@@ -3,8 +3,9 @@ se_number = 5
 i = 1
 while i <= 3:
     guess = int(input("Guess "))
-    if(guess == se_number):
+    if guess == se_number:
         print("You got the number, you win!")
         break
+    elif i >= 3:
+        print("Game over!")
     i+=1
-    print("You're out of chances")
