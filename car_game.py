@@ -1,12 +1,11 @@
 help_menu = '''
-start - to start the car
-stop - to stop the car
-quit - to exit
+[start - to start the car]
+[stop - to stop the car]
+[quit - to exit]
 '''
 car_started = False
 user_input = input("> ")
 while user_input.lower() != "quit":
-    user_input = input("> ")
     if user_input.lower() == "help":
         print(help_menu)
     elif user_input.lower() == "start" and not car_started:
@@ -19,3 +18,5 @@ while user_input.lower() != "quit":
         car_started = False
     elif user_input.lower() == "stop" and car_started == False:
             print("The car has already stopped!")
+    user_input = input("> ")
+
