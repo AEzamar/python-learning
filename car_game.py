@@ -1,4 +1,3 @@
-user_input = input("> ")
 help_menu = '''
 start - to start the car
 stop - to stop the car
