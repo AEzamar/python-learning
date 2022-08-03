@@ -13,6 +13,8 @@ while user_input.lower() != "quit":
         car_started = True
         print("The car is moving!")
         if user_input.lower() == "start" and car_started == True:
-            print("The is already moving")
+            print("The car is already moving")
     elif user_input.lower() == "stop" and car_started:
-        print("Car has stopped")
+        print("The car has stopped")
+        if user_input.lower() == "stop" and car_started == False:
+            print("The car has already stopped!")
