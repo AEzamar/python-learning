@@ -7,7 +7,6 @@ while guess_count <= 3:
     if guess == se_number:
         print("You got the number, you win!")
         break
-    if guess_count >= 3:
-        print("Game over!")
-        break
     guess_count+=1
+else:
+    print("Game Over!")
