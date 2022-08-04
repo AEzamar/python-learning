@@ -19,3 +19,5 @@ while user_input != "quit":
         car_started = False
     elif user_input == "stop" and car_started == False:
             print("The car has already stopped!")
+    else:
+        print("Unvalid command, type 'help' to see a list valid commands!")
