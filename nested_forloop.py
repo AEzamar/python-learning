@@ -1,3 +1,3 @@
-for xcoor in range(4):
-    for ycoor in range(3):
+for x in range(4):
+    for y in range(3):
         print(f"({x}, {y})")
