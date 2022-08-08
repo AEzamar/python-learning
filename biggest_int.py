@@ -1,8 +1,6 @@
-numbers = [4, 20, 69, 55, 33, 44, 11, 12, 21]
-biggest_int = numbers[0]
+numbers = [4, 20, 69, 69.5, 33, 44, 11, 12, 21]
+biggest_int = 0
 for num in numbers:
     if num > biggest_int:
-        bigeest_int = num
-    else:
-        print(num)
-    print(biggest_int)
+        biggest_int = num
+print(biggest_int)
