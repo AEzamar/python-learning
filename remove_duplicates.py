@@ -6,4 +6,5 @@ unique_list = []
 for number in numbers:
     if number not in unique_list:
         unique_list.append(number)
+        unique_list.sort()
 print(unique_list)
