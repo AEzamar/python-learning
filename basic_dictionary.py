@@ -1,5 +1,5 @@
 user = {
     "name": "Ed",
-    "age": 34,
-    "Job": "Web Development"
+    "email": "ed@edmail.com",
+    "Phone#": "7221596770"
 }
