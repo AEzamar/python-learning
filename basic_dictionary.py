@@ -5,3 +5,5 @@ user = {
 }
 name = user["name"]
 print(name)
+for key in user:
+    print(user[key])
