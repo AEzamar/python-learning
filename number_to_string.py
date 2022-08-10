@@ -1,0 +1,17 @@
+str_dty = {
+    "0": "Zero",
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five",
+    "6": "Six",
+    "7": "Seven",
+    "8": "Eight",
+    "9": "Nine"
+}
+str_phone = ""
+user_phone = input("What is your phone number? ")
+for digits in user_phone:
+    str_phone += str_dty[digits] + " "
+print(str_phone)
