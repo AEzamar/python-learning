@@ -12,4 +12,6 @@ for key in user:
     print(user[key])
 #Re-assigning a value to a key
 user["name"] = "Ed Azamar"
+user["birthdate"] = "Feb 14 1988"
 print(name)
+print(user)
