@@ -11,7 +11,7 @@ str_dty = {
     "9": "Nine"
 }
 str_phone = ""
-user_phone = input("What is your phone number? ")
+user_phone = input("phone number ")
 for digits in user_phone:
     str_phone += str_dty[digits] + " "
 print(str_phone)
