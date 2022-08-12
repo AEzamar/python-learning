@@ -1,3 +1,4 @@
+feeling = input("How are you feeling today? ")
 emoji_dty = {
     ":)": "😺",
     ":(": "☹️",
@@ -5,8 +6,7 @@ emoji_dty = {
     "T_T": "😢"
 }
 emoji_str = " "
-feeling = input("How are you feeling today? ")
-char_list = feeling.split()
+char_list = feeling.split(' ')
 for key in emoji_dty:
     for word in char_list:
         if word == key:
