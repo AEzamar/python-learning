@@ -6,9 +6,7 @@ emoji_dty = {
     "T_T": "😢"
 }
 emoji_str = " "
-char_list = feeling.split(' ')
-for key in emoji_dty:
-    for word in char_list:
-        if word == key:
-            emoji_str += feeling.replace(word, emoji_dty[word])
+word_list = feeling.split(' ')
+for word in word_list:
+    emoji_str += emoji_dty.get(word, word) + " "
 print(emoji_str)
