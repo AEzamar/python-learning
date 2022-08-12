@@ -3,4 +3,5 @@ def greet_user():
     print(f"Hello {username}!")
     print("Welcome aboard")
 
+
 greet_user()
