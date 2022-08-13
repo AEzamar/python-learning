@@ -14,3 +14,4 @@ def emoji_converter(message):
 
 print(emoji_converter("'Ellou Gov'nor :)"))
 print(emoji_converter("I'm sad Gov'nor :("))
+print(emoji_converter("Thangs are dang mang :D"))
