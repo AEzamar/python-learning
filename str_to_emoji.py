@@ -12,4 +12,5 @@ def emoji_converter(message):
     return emoji_str
 
 
-emoji_converter()
+print(emoji_converter("'Ellou Gov'nor :)"))
+print(emoji_converter("I'm sad Gov'nor :("))
