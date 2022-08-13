@@ -2,4 +2,5 @@ def square(number):
     return number * number
 
 
-square(5)
+result = square(5)
+print(result)
