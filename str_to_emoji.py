@@ -1,5 +1,4 @@
-def emoji_converter():
-    feeling = input("How are you feeling today? ")
+def emoji_converter(message):
     emoji_dty = {
         ":)": "😺",
         ":(": "☹️",
@@ -7,10 +6,10 @@ def emoji_converter():
         "T_T": "😢"
     }
     emoji_str = " "
-    word_list = feeling.split(' ')
+    word_list = message.split(' ')
     for word in word_list:
         emoji_str += emoji_dty.get(word, word) + " "
-    print(emoji_str)
+    return emoji_str
 
 
 emoji_converter()
