@@ -8,3 +8,5 @@ class Person:
 
 ed = Person("Eduardo", 34)
 print(ed.talk())
+bob = Person("Bob Burguer", 48)
+print(bob.talk())
