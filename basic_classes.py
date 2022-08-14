@@ -12,6 +12,7 @@ class Vehicle:
     def presentation(self):
         return f"Make: {self.make}| Model: {self.model}| Speed: {self.speed}"
 
+
 truck = Vehicle("Mercedes Benz", "TZ100", 70)
 print(truck.presentation())
 print(truck.accelerate())
