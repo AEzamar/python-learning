@@ -5,7 +5,7 @@ class Vehicle:
         self.speed = speed
     def accelerate(self):
         self.speed += 10
-        print(f"Vehicle is now going at {self.speed} km/h")
+        return f"Vehicle is now going at {self.speed} km/h"
 
 
 truck = Vehicle("Mercedes Benz", "TZ100", 70)
