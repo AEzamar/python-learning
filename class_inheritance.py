@@ -6,6 +6,17 @@ class Dog:
     def bark(self):
         return f"{self.name} says: Woof Woof"
 
+class Cat(Dog):
+    def meow(self):
+        return f"{self.name} says: meow meow!"
+
 
 dugger = Dog("Dugger", 7)
 print(dugger)
+print(dugger.info())
+print(dugger.bark())
+
+catmandu = Cat("Catmandu", 5)
+print(catmandu)
+print(catmandu.info())
+print(catmandu.meow())
