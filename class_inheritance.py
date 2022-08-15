@@ -16,6 +16,15 @@ class Cat(Mammal):
         return f"{self.name} says: meow meow!"
 
 
+class Ferret(Mammal):
+    def stuff(self):
+        return f"{self.name} says: *Ferret noises*"
+
+
+class GuineaPig:
+    pass
+
+
 dugger = Dog("Dugger", 7)
 print(dugger)
 print(dugger.info())
