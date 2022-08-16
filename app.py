@@ -6,5 +6,5 @@ from converters import kg_to_lbs
 from utils import find_max
 print(lbs_to_kg(120))
 print(kg_to_lbs(67))
-numbers = [1, 6, 60, 31, 69, 770, 88, 2, 3, 5, 87]
+numbers = [1, 6, 60, 31, 69, 77, 88, 2, 3, 5, 87]
 print(find_max(numbers))
