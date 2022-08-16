@@ -1,4 +1,4 @@
-def max_int(list):
+def find_max(list):
     biggest = list[0]
     for num in list:
         if num > biggest:
