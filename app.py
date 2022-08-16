@@ -1,4 +1,6 @@
-import converters
+#With this line we import the whole module
+#import converters
+#With the 2 lines below we import specific functions from the module and we can tell like would with regular functions
 from converters import lbs_to_kg
 from converters import kg_to_lbs
 print(lbs_to_kg(120))
