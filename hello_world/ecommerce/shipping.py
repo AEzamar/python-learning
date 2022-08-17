@@ -1,2 +1,2 @@
-def calculate_shipping():
+def calc_shipping():
     print("Calculate shipping!")
