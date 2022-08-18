@@ -1,4 +1,5 @@
 from pathlib import Path
 
 
-path = Path("ecommerce")
+path = Path()
+print(path.glob("*.py"))
