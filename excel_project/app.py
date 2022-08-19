@@ -9,4 +9,6 @@ sheet = wb['Sheet1']
 #max_row = sheet.max_row
 for row in range(2, sheet.max_row + 1):
     cell = sheet.cell(row, 3)
-    print(cell.value)
+    corrected_price = cell.value * 0.9
+    sheet.cell(row, 4).value = corrected_price
+print(sheet.cell(row, 4))
