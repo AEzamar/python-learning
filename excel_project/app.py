@@ -9,4 +9,4 @@ sheet = wb['Sheet1']
 #max_row = sheet.max_row
 for row in range(2, sheet.max_row + 1):
     cell = sheet.cell(row, 3)
-    print(cell)
+    print(cell.value)
