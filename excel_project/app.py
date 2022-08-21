@@ -13,5 +13,4 @@ for row in range(2, sheet.max_row + 1):
     corrected_price_cell = sheet.cell(row, 4)
     corrected_price_cell.value = corrected_price
 
-
 wb.save('transactons2.xlsx')
