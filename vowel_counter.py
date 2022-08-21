@@ -2,7 +2,7 @@ def vowel_counter(str):
     vowels_list = ['a', 'e', 'i', 'o', 'u']
     vowel_count = 0
     itn = 0
-    for char in str:
+    for char in str.lower():
         if char == vowels_list[itn]:
             vowel_count += 1
             print(char)
