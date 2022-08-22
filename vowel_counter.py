@@ -10,3 +10,4 @@ def vowel_counter(str):
 
 print(vowel_counter("zdslw"))
 print(vowel_counter("Lalafell"))
+print(vowel_counter("This string has a shitload of vowels yall"))
