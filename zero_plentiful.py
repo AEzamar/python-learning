@@ -19,7 +19,6 @@ def zero_plentiful(list):
         return no_change_seq
             
 
-
 print(zero_plentiful([1, 2, 3, 0, 0, 0, 0, 1, 0, 2]))
 print(zero_plentiful([0, 0, 0, 0, 2, 5, 4, 1, 0, 0, 0]))
 print(zero_plentiful([8, 4, 2, 1, 0, 0, 0, 0, 4, 3, 1, 2]))
