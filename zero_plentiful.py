@@ -11,7 +11,7 @@ def zero_plentiful(list):
         else:
             zero_count = 0
             sequence_count = 0
-            
+
     if no_change_seq > 0 and sequence_count < 1:
         return 0
     elif no_change_seq > 0 and sequence_count > 0:
@@ -19,5 +19,5 @@ def zero_plentiful(list):
             
 
 
-print(zero_plentiful([1, 2, 3, 0, 0, 0, 1, 0, 2]))
+print(zero_plentiful([1, 2, 3, 0, 0, 0, 0, 1, 0, 2]))
 print(zero_plentiful([0, 0, 0, 0, 2, 5, 4, 1, 0, 0, 0]))
