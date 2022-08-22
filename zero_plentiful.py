@@ -8,11 +8,11 @@ def zero_plentiful(list):
             if zero_count >= 4:
                 no_change_seq += 1
                 sequence_count += 1
+                zero_count = 0
             elif zero_count < 4:
                 sequence_count = 0
         else:
             zero_count = 0
-    print(no_change_seq)
     if no_change_seq > 0 and sequence_count < 1:
         return 0
     elif no_change_seq > 0 and sequence_count > 0:
