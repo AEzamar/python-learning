@@ -4,10 +4,11 @@ def is_uppercase(inp):
         if char == char.upper():
             upper_count += 1
         print(upper_count, len(inp))
-        """ if upper_count == len(inp):
+        if upper_count == len(inp):
             return True
         else:
-            return False """
+            print(upper_count, len(inp))
+            return False
 
 
 
