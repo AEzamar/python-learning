@@ -3,12 +3,11 @@ def is_uppercase(inp):
     for char in inp:
         if char == char.upper():
             upper_count += 1
-        print(upper_count, len(inp))
-        if upper_count == len(inp):
-            return True
-        else:
-            print(upper_count, len(inp))
-            return False
+    print(upper_count, len(inp))
+    if upper_count == len(inp):
+        return True
+    else: 
+        return False
 
 
 
