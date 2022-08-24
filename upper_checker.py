@@ -14,7 +14,7 @@ print(is_uppercase("THIS IS A STRING MANG"))
 
 def upper_checker1(inp):
     for char in inp:
-        char != char.upper()
+        print(char == char.upper())
 
 
-print(upper_checker1("THIS IS A STRiNG"))
+print(upper_checker1("THIS IS A string"))
