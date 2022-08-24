@@ -3,10 +3,12 @@ def is_uppercase(inp):
     for char in inp:
         if char == char.upper():
             upper_count += 1
-        if upper_count == len(inp):
+        print(upper_count, len(inp))
+        """ if upper_count == len(inp):
             return True
         else:
-            return False
+            return False """
+
 
 
 print(is_uppercase("THIS IS A STRING MANG"))
