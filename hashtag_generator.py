@@ -1,6 +1,8 @@
 def hashtag_generator(str):
     str_list = str.split()
-    print(str_list)
+    upper_str_list = []
+    for stri in str_list:
+        upper_str_list.append(stri[0].upper() + stri[1:])
+    return f"#{upper_str_list.join()}"
 
-
-hashtag_generator("This is a string")
+print(hashtag_generator("This is a string"))
