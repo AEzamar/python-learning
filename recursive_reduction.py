@@ -1,5 +1,5 @@
 def digital_root(n):
-    n_list = n.split()
+    n_list = str(n).split()
     return n_list
 
 
