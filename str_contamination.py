@@ -1,7 +1,10 @@
 def contamination(txt, char):
-    for ch in txt:
-        contaminated = re.sub(ch, char, txt)
+    contaminated = ""
+    iteration = 0
+    while iteration < len(txt):
+        contaminated += char
+        iteration += 1
     return contaminated
 
 
-print(contamination("hello", "*"))
+print(contamination("hello", "]"))
