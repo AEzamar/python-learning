@@ -1,6 +1,6 @@
 def contamination(txt, char):
     for ch in txt:
-        contaminated = txt.replace(f"\{ch}\g", char)
+        contaminated = re.sub(ch, char, txt)
     return contaminated
 
 
