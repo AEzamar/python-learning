@@ -8,3 +8,4 @@ def contamination(txt, char):
 
 
 print(contamination("hello", "]"))
+print(contamination("Hey there", ">"))
