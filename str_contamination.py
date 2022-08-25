@@ -1,9 +1,9 @@
 def contamination(text, char):
     contaminated = ""
-    iteration = 0
-    while iteration < len(text):
+    i = 0
+    while i < len(text):
         contaminated += char
-        iteration += 1
+        i += 1
     return contaminated
 
 
