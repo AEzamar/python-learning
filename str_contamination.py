@@ -1,7 +1,7 @@
-def contamination(txt, char):
+def contamination(text, char):
     contaminated = ""
     iteration = 0
-    while iteration < len(txt):
+    while iteration < len(text):
         contaminated += char
         iteration += 1
     return contaminated
