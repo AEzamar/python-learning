@@ -1,8 +1,10 @@
 def solution(string):
     reversed_str = ""
-    for char in string[-1]:
-        reversed_str += char
+    i = len(string)
+    while i > 0:
+        reversed_str += string[i]
+        i -= 1
     return reversed_str
 
 
-solution("Hello")
+print(solution("Hello"))
