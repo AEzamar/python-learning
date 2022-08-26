@@ -5,4 +5,5 @@ def digital_root(n):
         total += int(digit)
     return total
 
+
 print(digital_root(123456))
