@@ -6,5 +6,7 @@ def solution(string):
         i += -1
     return reversed
 
-    
+
 print(solution("Hello"))
+print(solution("World"))
+print(solution("Reverse This!"))
