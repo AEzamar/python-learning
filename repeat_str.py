@@ -8,3 +8,8 @@ def repeat_str(repeat, string):
 print(repeat_str(3, "Hi"))
 print(repeat_str(5, "Oi!"))
 print(repeat_str(6, "Oh yeah"))
+
+
+#This solution actually works
+def repeat_str1(repeat, string):
+    return repeat * string
