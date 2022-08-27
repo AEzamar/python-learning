@@ -10,3 +10,11 @@ def solution(string):
 print(solution("Hello"))
 print(solution("World"))
 print(solution("Reverse This!"))
+
+
+#There is a one line solution to this
+def solution1(string):
+    return string[:: -1]
+
+
+print(solution1("Damn"))
