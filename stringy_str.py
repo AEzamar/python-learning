@@ -2,7 +2,8 @@ def stringy(size):
     stringy_str = ""
     a = '1'
     b = '0'
-    for i in range(size):
+    for i in range(1, size):
+        print('iteration', i)
         if i % 2 == 0:
             print('i % 2', i)
             stringy_str += a
