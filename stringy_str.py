@@ -1,10 +1,9 @@
 def stringy(size):
     stringy_str = ""
-    binary_tuple = ('1', '0')
-    a, b = binary_tuple
+    a = '1'
+    b = '0'
     for i in range(size):
-        stringy_str += a
-        stringy_str += b
+        stringy_str += a or b
     return stringy_str
 
 
