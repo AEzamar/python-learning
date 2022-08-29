@@ -14,3 +14,16 @@ def stringy(size):
 
 
 print(stringy(4))
+
+def stringy1(size):
+    str_list = []
+    a = '1'
+    b = '0'
+    for i in range(size):
+        str_list.append(a)
+    for it in range(size):
+        str_list.append(b)
+    return "".join(str_list)
+
+
+print(stringy1(4))
