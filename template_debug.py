@@ -1,4 +1,4 @@
 def build_string(*args):
-    return f"I like {args.join()}"
+    return f"I like {', '.join(args)}"
 
-print(build_string("Cheese", "Milk", "Egg"))
+print(build_string("Cheese", "Milk", "Eggs"))
