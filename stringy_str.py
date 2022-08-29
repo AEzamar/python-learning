@@ -3,7 +3,7 @@ def stringy(size):
     a = '1'
     b = '0'
     for i in range(size):
-        a in stringy_str
+        if a in stringy_str stringy_str += b else: stringy_str += a
     return stringy_str
 
 
