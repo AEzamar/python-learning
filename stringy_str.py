@@ -1,12 +1,10 @@
 def stringy(size):
     stringy_str = ""
-    a = '1'
-    b = '0'
     for i in range(size):
         if i % 2 == 0:
-            stringy_str += a
+            stringy_str += '1'
         elif i % 1 == 0:
-            stringy_str += b
+            stringy_str += '0'
     return stringy_str
 
 
