@@ -3,7 +3,7 @@
         a = '1'
         b = '0'
         for i in range(size):
-            if i % 2 == 0 stringy_str += a else += b
+            stringy_str += a if i % 2 == 0 else stringy_str += b
         """ for i in range(size):
             if i % 2 == 0:
                 stringy_str += a
