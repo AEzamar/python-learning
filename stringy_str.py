@@ -15,6 +15,7 @@ def stringy(size):
 
 print(stringy(5))
 
+
 def stringy1(size):
     str_list = []
     a = '1'
