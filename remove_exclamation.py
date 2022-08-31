@@ -14,9 +14,12 @@ def remove1(s):
             s.replace(char, "")
     return s
 
-print(remove1("Exclamation!!!"))
+#print(remove1("Exclamation!!!"))
 
 
 def remove2(s):
     if '!' in s[-1]:
         s.replace("!", "")
+
+
+print(remove2("Exclamation!!!"))
