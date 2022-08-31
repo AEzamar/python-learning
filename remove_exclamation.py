@@ -19,7 +19,9 @@ def remove1(s):
 
 def remove2(s):
     if '!' in s[-1]:
-        s.replace("!", "")
+        new_s = s[-1].replace("!", "", 1)
+    return new_s
 
 
 print(remove2("Exclamation!!!"))
+print(remove2("!Hi! Hi!"))
