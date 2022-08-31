@@ -18,7 +18,7 @@ def remove1(s):
 
 
 def remove2(s):
-    if '!' in s[-1]:
+    if s[-1] == '!':
         new_s = s[-1].replace("!", "", 1)
     return new_s
 
