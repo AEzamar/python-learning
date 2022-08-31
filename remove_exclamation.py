@@ -18,8 +18,9 @@ def remove1(s):
 
 
 def remove2(s):
-    if s[-1] == '!':
-        new_s = s[-1].replace("!", "", 1)
+    last_char = s[-1]
+    if last_char == '!':
+        new_s = s.replace(s[-1], "", 1)
     return new_s
 
 
