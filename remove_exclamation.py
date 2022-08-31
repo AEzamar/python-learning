@@ -20,7 +20,10 @@ def remove1(s):
 def remove2(s):
     if s[-1] == '!':
         return s[:-1]
+    else: 
+        return s
 
 
-print(remove2("Exclamation!!!"))
-print(remove2("!Hi! Hi!"))
+print(remove2('Exclamation!!!'))
+print(remove2('!Hi! Hi!'))
+print(remove2('Hi'))
