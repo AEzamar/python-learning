@@ -1,9 +1,9 @@
 import re
 def remove(s):
-    return re.sub('!', "", s)
+    return re.sub('!$', "", s, 1)
 
 
-#print(remove("Dang!!!!!"))
+print(remove("Dang!!!!!"))
 
 
 def remove1(s):
@@ -24,6 +24,7 @@ def remove2(s):
         return s
 
 
-print(remove2('Exclamation!!!'))
+""" print(remove2('Exclamation!!!'))
 print(remove2('!Hi! Hi!'))
 print(remove2('Hi'))
+print(remove2('!Hi')) """
