@@ -4,7 +4,13 @@ def remove(s):
 
 
 print(remove("Dang!!!!!"))
-
+print(remove('!hi! !hi!'))
+print(remove('!Hi'))
+print(remove('Hi'))
+print(remove('!Hi!'))
+print(remove('Hi!!'))
+print(remove('Hi!'))
+print(remove('!Hi! !Hi!'))
 
 def remove1(s):
     for char in s:
