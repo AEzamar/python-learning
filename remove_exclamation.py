@@ -24,3 +24,7 @@ def remove1(s):
 print(remove1('!Hi! Hi!'))
 print(remove1('Hi'))
 print(remove1('!Hi')) """
+
+#CW solution, very elegant
+#def remove(s):
+    #return s[:-1] if s.endswith('!') else s
