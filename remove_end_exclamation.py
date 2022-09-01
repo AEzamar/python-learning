@@ -33,5 +33,6 @@ def remove1(s):
     return s[:len(s) - mark_count]
 
 
-print(remove1("!!!Hi!!!"))
-print(remove1("!Hi!"))
+print(remove1('!!!Hi!!!'))
+print(remove1('!Hi!'))
+print(remove1('!!!Hi!!, !!!Hiiii!!!'))
