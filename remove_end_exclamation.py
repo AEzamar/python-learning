@@ -1,9 +1,11 @@
 import re
 def remove(s):
+    mark_count = 0
     i = -1
     for char in s:
         if s[i] == '!':
-            s.replace('!$', "")
+            mark_count += 1
+            re.sub('!$', "", s, mark_count)
             i += -1
         elif s[i] != '!':
             return s
