@@ -11,7 +11,7 @@ def remove(s):
             return s
 
 
-print(remove("!!!Hi!!!"))
+#print(remove("!!!Hi!!!"))
 
 
 def remove1(s):
@@ -21,7 +21,17 @@ def remove1(s):
     return replaced_s
 
 
-print(remove1("!!!Hi!!!"))
+#print(remove1("!!!Hi!!!"))
 
-#def remove1(s):
-    #return s[:-1] s.replace(s[-1], "") 
+def remove1(s):
+    i = -1
+    mark_count = 0
+    for char in s:
+        if s[i] == '!':
+            mark_count += 1
+            i += -1
+    return s[:len(s) - mark_count]
+
+
+print(remove1("!!!Hi!!!"))
+print(remove1("!Hi!"))
