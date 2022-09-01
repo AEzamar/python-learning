@@ -9,7 +9,7 @@ def remove(s):
             return s
 
 print(remove("!!!Hi!!!"))
-print(-1 + -1)
 
-def remove1(s):
-    return s[:-1] if '!' in s 
+
+#def remove1(s):
+    #return s[:-1] s.replace(s[-1], "") 
