@@ -48,4 +48,10 @@ def remove2(s):
     return new_s
 
 
-print(remove2('!!!Hi Hi!!!')) 
+print(remove2('!!!Hi Hi!!!'))
+
+#Codewars solution
+
+""" import re
+def remove(s):
+    return re.split("!+$", s)[0] """
