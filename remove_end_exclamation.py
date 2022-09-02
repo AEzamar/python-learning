@@ -42,4 +42,10 @@ def remove2(s):
     new_s = ""
     i = -1
     for char in s:
-        
+        if s[i] != '!':
+            new_s += s[i]
+            i += -1
+    return new_s
+
+
+print(remove2('!!!Hi Hi!!!')) 
