@@ -36,3 +36,10 @@ def remove1(s):
 print(remove1('!!!Hi!!!'))
 print(remove1('!Hi!'))
 print(remove1('!!!Hi!!, !!!Hiiii!!!'))
+
+
+def remove2(s):
+    new_s = ""
+    i = -1
+    for char in s:
+        
