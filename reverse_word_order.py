@@ -9,3 +9,9 @@ def reverse(st):
 
 
 print(reverse("Hello Dang World!"))
+
+#Codewars solution
+
+""" import re
+def remove(s):
+    return re.split("!+$", s)[0] """
