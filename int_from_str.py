@@ -1,11 +1,11 @@
 import re
 def get_number_from_string(string):
-    ints = ""
+    nums = ""
     ints_str = '0123456789'
     for char in string:
         if char in ints_str:
-            ints += char
-    return int(ints)
+            nums += char
+    return int(nums)
 
 
 print(get_number_from_string("Hell1o Worl2d1"))
