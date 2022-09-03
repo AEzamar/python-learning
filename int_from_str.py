@@ -16,3 +16,7 @@ def get_number_from_string1(string):
 
 
 print(get_number_from_string1("He2llo1 Wo1r1ld2"))
+
+#CD solution
+""" def get_number_from_string(s):
+    return int(re.sub(r'\D', '', s)) """
