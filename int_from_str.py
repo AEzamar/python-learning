@@ -11,7 +11,7 @@ def get_number_from_string(string):
 print(get_number_from_string("Hell1o Worl2d1"))
 
 def get_number_from_string1(string):
-    nums = re.search('[0-9]\d+', string)
+    nums = re.search('[0-9]', string)
     return nums.group()
 
 
