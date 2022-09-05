@@ -16,7 +16,7 @@ def to_csv_text(list):
 def to_csv_text1(list):
     csv_text = ""
     for sublist in list:
-        csv_text += str(*sublist) + '\n'
+        csv_text += f'{",".join(sublist)}' + '\n'
     return csv_text
 
 
