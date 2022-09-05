@@ -1,8 +1,8 @@
 def to_csv_text(list):
     csv_text = ""
     for ele in list:
-        print(" ".join(ele))
-        #csv_text = " ".join(ele)
+        #print(*ele)
+        csv_text += ele
     return  csv_text
 
 
