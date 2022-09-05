@@ -1,6 +1,9 @@
 def to_csv_text(list):
     csv_text = ""
-    
+    i = 0
+    for ele in list:
+        csv_text += str(ele[i])
+        i += 1
     return csv_text    
 
 
