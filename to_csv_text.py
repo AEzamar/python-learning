@@ -1,9 +1,9 @@
 def to_csv_text(list):
-    csv_text = []
-    for ele in list:
-        #print(*ele)
-        csv_text += ele[:]
-    return csv_text
+    csv_text = ""
+    while len(list):
+        poped = list.pop()
+        csv_text += str(poped)
+    return csv_text    
 
 
 print(to_csv_text([
