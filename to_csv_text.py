@@ -1,8 +1,6 @@
 def to_csv_text(list):
     csv_text = ""
-    while len(list):
-        poped = list.pop()
-        csv_text += str(poped)
+    
     return csv_text    
 
 
