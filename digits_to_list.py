@@ -9,3 +9,7 @@ def digitize(n):
 
 
 print(digitize(32514))
+
+#Other coder's solution, there's map in python btw
+""" def digitize(n):
+    return map(int, str(n)[::-1]) """
