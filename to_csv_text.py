@@ -1,8 +1,7 @@
 def to_csv_text(list):
     csv_text = ""
-    for sublist in list:
-        for ele in str(sublist) + '\n':
-            csv_text += ele
+    for ele in list:
+        print(*ele)
     return csv_text    
 
 
