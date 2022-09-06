@@ -1,5 +1,5 @@
 def arr(n = 0):
-    return [] if n < 1 else list(range(n))
+    return [] or list(range(n))
 
 
 print(arr(5))
