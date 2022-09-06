@@ -1,8 +1,5 @@
 def arr(n):
-    n_list = []
-    for nm in range(n):
-        n_list.append(nm)
-    return n_list
+    return list(range(n)) or []
 
 
 print(arr(5))
