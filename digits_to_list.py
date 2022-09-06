@@ -1,5 +1,7 @@
 def digitize(n):
-    return str(n).split().sort(reverse=True)
+    n_list = str(n).split(" ")
+    print(n_list)
+    return n_list.sort()
 
 
 print(digitize(32514))
