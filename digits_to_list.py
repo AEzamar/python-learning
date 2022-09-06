@@ -4,7 +4,7 @@ def convert(item):
 
 def digitize(n):
     n_list = list(str(n))
-    return n_list[::-1]
+    return [num for num in n_list]
 
 
 print(digitize(32514))
