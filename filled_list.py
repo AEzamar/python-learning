@@ -6,3 +6,4 @@ def arr(n):
 
 
 print(arr(5))
+print(arr())
