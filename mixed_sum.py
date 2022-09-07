@@ -1,2 +1,5 @@
 def sum_mix(arr):
-    return [int(ele) in ele for arr]
+    total = 0
+    for num in arr:
+        total += int(num)
+    return [int(ele) for ele in arr]
