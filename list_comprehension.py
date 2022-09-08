@@ -1,4 +1,4 @@
-def g_movies(lst):
+def g_movies(lst): 
     return [mov for mov in lst if mov.startswith('G')]
 
 
