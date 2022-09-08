@@ -9,3 +9,10 @@ def two_thousand_movies(lst):
 
 
 print(two_thousand_movies([('The Matrix', 1999), ('Ernest Goes Full MAGA', 2016), ('American Psycho', 2003), ('Amelie', 1998)]))
+
+
+def scalar_multiplication(lst):
+    return [num * 4 for num in lst]
+
+
+print(scalar_multiplication([2, -3, 1]))
