@@ -12,3 +12,8 @@ print(sum_of_differences([1, 1, 1, 1, 1]))
 print(sum_of_differences([-17, 17]))
 print(sum_of_differences([-1]))
 print(sum_of_differences([-3, -2, -1]))
+
+
+#User submitted solution
+""" def sum_of_differences(arr):
+    return max(arr) - min(arr) if arr else 0 """
