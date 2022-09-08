@@ -5,7 +5,7 @@ def g_movies(lst):
 print(g_movies(["Frankenstein", "Old Gals", "The Matrix", "Gattaca", "Gulliver", "Sausage Party"]))
 
 def two_thousand_movies(lst):
-    return [(title, year) = movie for (title, year) = movie in lst if year >= 2000 ] 
+    return [(movie = title, year) for movie in lst if year >= 2000 ] 
 
 
 print(two_thousand_movies([('The Matrix, 1999'), ('Ernest Goes Full MAGA', 2016), ('American Psycho', 2003), ('Amelie', 1998)]))
