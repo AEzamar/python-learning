@@ -16,3 +16,7 @@ def scalar_multiplication(lst):
 
 
 print(scalar_multiplication([2, -3, 1]))
+
+
+def cartesian_product(list_a, list_b):
+    return [(a, b) for a in list_a for b in list_b]
