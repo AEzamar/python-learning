@@ -8,3 +8,4 @@ def string_editor(arr):
 
 
 print(string_editor(["Please", "Number", "These", "Strings"]))
+print(string_editor(["Eggs", "Milk", "Stress", "Guns", "Murica", "Bible", "Riffle"]))
