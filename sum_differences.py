@@ -5,7 +5,7 @@ def sum_of_differences(arr):
     while len(arr) > 1:
         result += arr[0] - arr[next]
         print(result)
-        arr.pop()
+        arr.remove(arr[0])
     return result
 
 
