@@ -1,7 +1,6 @@
 def print_array(arr):
-    arr_st = ""
-    for char in arr:
-        arr_st += str(char) + ','
+    arr_st  = ""
+    arr_st += str([str(char) for char in arr])
     return arr_st
 
 
