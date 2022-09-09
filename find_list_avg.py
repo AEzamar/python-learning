@@ -7,3 +7,8 @@ def find_average(nums):
 
 print(find_average([9, 8, 9, 9, 9, 9, 9, 9]))
 print(find_average([]))
+
+
+#This solution is user submitted, dang!
+""" def find_average(nums):
+    return float(sum(nums)) / len(nums) if len(nums) !=0 else 0 """
