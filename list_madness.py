@@ -1,3 +1,5 @@
 def array_madness(a, b):
-    bool = False
-    [bool = True if num**2 for num in a > num**3 for num in b else bool = False]
+    if [num ** 2 for num in a] > [num ** 3 for num in b]:
+        return True
+    else:
+        return False
