@@ -1,6 +1,6 @@
-def merge_arrays(first, second):
+def merge_arrays(arr1, arr2):
     merged_list = []
-    for num in first + second:
+    for num in arr1 + arr2:
         if num not in merged_list:
             merged_list.append(num)
     merged_list.sort()
