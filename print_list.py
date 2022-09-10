@@ -1,9 +1,5 @@
-import re
-
-
 def print_array(arr):
-    arr_st = str(arr)[1:-1]
-    return arr_st.replace(' ', '')
+    return ','.join(map(str, arr))
 
 
 print(print_array([2, 4, 5, 2]))
