@@ -1,9 +1,5 @@
 def print_array(arr):
-    arr_st = ""
-    sep = ','
-    for char in arr:
-        arr_st += str(char) + sep
-    return arr_st
+    arr_st = str(arr)[1:-1]
 
 
 print(print_array([2, 4, 5, 2]))
