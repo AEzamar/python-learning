@@ -2,13 +2,13 @@ import functools
 
 
 def array_madness(a, b):
-    a_square = [num ** 2 for num in a]
+    a_square = functools.reduce(lambda a, b: a + b, [num ** 2 for num in a])
     b_cube = [num ** 3 for num in b]
-    for i in range(len(a_square)):
+    """ for i in range(len(a_square)):
         if a_square[i] > b_cube[i]:
             return True
         else:
-            return False
+            return False """
     """ print(a_square)
     print(b_cube) """
 
