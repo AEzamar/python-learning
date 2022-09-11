@@ -1,8 +1,8 @@
-def to_csv_text(list):
-    csv_text = ""
-    for ele in list:
-        csv_text += str(ele) + '\n'
-    return csv_text    
+def to_csv_text(array):
+    csv_st = ""
+    for ele in array:
+        csv_st += ','.join(map(str, ele)) + '\n'
+    return csv_st  
 
 
 print(to_csv_text([
