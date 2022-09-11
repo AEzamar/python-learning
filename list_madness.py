@@ -2,7 +2,7 @@ import functools
 
 
 def array_madness(a, b):
-    a_square = functools.reduce(lambda accu, curr  : accu + curr, [num ** 2 for num in a])
+    a_square = functools.reduce(lambda accu, curr: accu + curr, [num ** 2 for num in a])
     b_cube = functools.reduce(lambda accu, curr: accu + curr, [num ** 3 for num in b])
     return True if a_square > b_cube else False
 
