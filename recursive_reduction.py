@@ -6,8 +6,9 @@ def digital_root(n):
     root = functools.reduce(lambda accu, curr: accu + curr, [n])
     print(root)
     n_list = str(n).split()
-    for digit in n_list[0]:
-        total += int(digit)
+    for digit in n_list:
+        n_list.map(int, digit)
+
     return total
 
 
