@@ -15,4 +15,6 @@ print(to_csv_text([
 #User submitted solution
 """ def toCsvText(array):
     return '\n'.join(','.join(map(str, line)) for line in array) """
-
+#Had to include this one too, never seen replace being chained like that
+""" def toCsvText(array) :
+    return(str(array).replace('],', '\n').replace('[', '').replace(']', '').replace(' ', '')) """
