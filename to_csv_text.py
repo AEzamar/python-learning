@@ -2,7 +2,7 @@ def to_csv_text(array):
     csv_st = ""
     for ele in array:
         csv_st += ','.join(map(str, ele)) + '\n'
-    return csv_st.replace('\s+$', "")  
+    return csv_st.rstrip()  
 
 
 print(to_csv_text([
