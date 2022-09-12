@@ -12,5 +12,7 @@ print(to_csv_text([
     [ 30,31,32,33,34 ]]))
 
 
-
+#User submitted solution
+""" def toCsvText(array):
+    return '\n'.join(','.join(map(str, line)) for line in array) """
 
