@@ -1,10 +1,9 @@
 def arr_adder(arr):
     arr_st = ""
     col = 0
-    for row in arr:
-        print(row)
-        for col in row:
-            arr_st += str(arr[row][col])
+    print(arr[2][0])
+    for row in range(len(arr)):
+        arr_st += str(arr[0])
     return arr_st
 
 
