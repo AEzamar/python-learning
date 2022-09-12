@@ -1,10 +1,10 @@
 def arr_adder(arr):
     arr_st = ""
-    col = 0
-    print(arr[2][0])
     for row in range(len(arr)):
-        arr_st += str(arr[0])
-    return arr_st
+        arr_st += ' '
+        for col in range(len(arr[0])):
+            arr_st += str(arr[col][row])
+    return arr_st.lstrip()
 
 
 print(arr_adder([
