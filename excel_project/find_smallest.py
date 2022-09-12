@@ -1,9 +1,9 @@
 def find_smallest(numbers, to_return):
-    return min(numbers) if to_return.lower == 'value' else numbers.index(min(numbers))
-    if to_return.lower() == 'value':
+    return min(numbers) if to_return.lower() == 'value' else numbers.index(min(numbers))
+    """ if to_return.lower() == 'value':
         return min(numbers)
     elif to_return.lower() == 'index':
-        return numbers.index(min(numbers))
+        return numbers.index(min(numbers)) """
 
 
 print(find_smallest([4, 2, -1, 3, 5, 1], 'Value'))
