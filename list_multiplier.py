@@ -4,4 +4,4 @@ def multiply_all(list):
         return [num * int for num in list_copy]
 
 
-print(multiply_all([[1, 2, 3]]))
+print(multiply_all([1, 2, 3]))
