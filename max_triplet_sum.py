@@ -7,3 +7,8 @@ def max_tri_sum(numbers):
 
 print(max_tri_sum([3,2,6,8,2,3]))
 print(max_tri_sum([2,9,13,10,5,2,9,5]))
+
+
+#User submitted solution
+""" def max_tri_sum(numbers):
+    return sum(sorted(set(numbers))[-3:]) """
