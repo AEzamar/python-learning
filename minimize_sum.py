@@ -1,10 +1,14 @@
+import functools
+
+
 def min_sum(arr):
     total = 0
     arr.sort(reverse=True)
-    while len(arr):
+    """ while len(arr):
          total += arr[0] * arr[-1]
          del arr[0]
-         arr.pop()
+         arr.pop() """
+    total += functools.reduce(lambda a, b: a * b, arr)
     return total
 
 
