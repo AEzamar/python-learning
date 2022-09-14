@@ -1,10 +1,10 @@
 def min_sum(arr):
     total = 0
     arr.sort(reverse=True)
-    minus_i = -1
-    for i in range(len(arr)):
-        total += arr[i] * arr[minus_i]
-        minus_i += -1
+    while len(arr):
+         total += arr[0] * arr[-1]
+         del arr[0]
+         arr.pop()
     return total
 
 
