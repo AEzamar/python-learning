@@ -1,4 +1,3 @@
-from audioop import reverse
 import functools
 def max_product(lst, n_largest_elements):
     lst.sort(reverse=True)
