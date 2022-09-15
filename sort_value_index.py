@@ -1,7 +1,6 @@
 import math
-def product_sort(lst):
-    for i, ele in enumerate(lst):
-        return ele * i + 1
+def product_sort(ele):
+    return 
 
 
 def sort_by_value_and_index(lst):
