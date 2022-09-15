@@ -1,11 +1,8 @@
 import math
-def product_sort(lst):
-    return [ele * i for i, ele in lst]
 
-
+sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
-    lst.sort(key=product_sort)
-    print(lst)
+    sorted(enumerate(lst), key = sort_by_product)
     product_lst = [num * (i + 1) for i, num in enumerate(lst)]
     print(product_lst)
     product_lst.sort()
