@@ -1,6 +1,6 @@
 import math
 
-def sort_by_product(ele, i):
+def sort_by_product(i, ele):
     return ele * i
 
 
