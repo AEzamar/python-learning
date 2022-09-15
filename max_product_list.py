@@ -6,3 +6,12 @@ def max_product(lst, n_largest_elements):
 
 
 print(max_product([4, 3, 5], 2))
+
+
+#User submitted solution, using 3 modules
+""" from functools import reduce
+from operator import mul
+from heapq import nlargest
+
+def maxProduct (lst, n):
+    return reduce(mul, nlargest(n, lst)) """
