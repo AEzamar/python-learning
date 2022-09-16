@@ -29,3 +29,7 @@ def array_leader2(numbers):
         if len(sub_lst) == 1 and sum(sub_lst) > 0:
             leaders.append(sum(sub_lst))
     return leaders
+
+
+print(array_leader2([1,2,3,4,0]))
+print(array_leader2([-36,-12,-27]))
