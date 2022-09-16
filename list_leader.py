@@ -18,3 +18,14 @@ print(array_leader([-36,-12,-27]))
 
 def array_leader1(numbers):
     return [num for num in numbers if num > sum(numbers[num:])]
+
+def array_leader2(numbers):
+    leaders = []
+    for num in numbers:
+        sub_lst = numbers[num:]
+        if num > sum(sub_lst):
+            leaders.append(num)
+            numbers.remove(num)
+        if len(sub_lst) == 1 and sum(sub_lst) > 0:
+            leaders.append(sum(sub_lst))
+    return leaders
