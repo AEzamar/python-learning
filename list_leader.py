@@ -1,16 +1,17 @@
 #from functools import reduce
 def array_leader(numbers):
-    leader = 0
+    leaders = []
     for num in numbers:
         sub_arr = numbers[num:]
         """ print(sub_arr)
         print(sum(sub_arr)) """
         if num > sum(sub_arr):
-            leader = num 
-    return leader
+            leaders.append(num) 
+    return leaders
 
 
 print(array_leader([1,2,3,4,0]))
+print(array_leader([1, 2]))
 
 
 def array_leader1(numbers):
