@@ -2,7 +2,7 @@ import math
 
 
 def sort_by_product(lst):
-    return [(ele * i + 1) for i, ele in enumerate(lst)]
+    return [ele*(i + 1) for i, ele in enumerate(lst)]
 
 
 #sort_by_product = lambda i, ele: ele * (i + 1)
