@@ -23,12 +23,13 @@ def array_leader2(numbers):
     leaders = []
     for num in numbers:
         sub_lst = numbers[num:]
+        print(numbers)
         if num > sum(sub_lst):
             leaders.append(num)
-            numbers.remove(num)
             print(numbers)
-        elif len(sub_lst) == 1 and num > 0:
+        if len(sub_lst) == 1 and num > 0:
             leaders.append(num)
+        numbers.remove(num)
     return leaders
 
 
