@@ -12,8 +12,8 @@ def array_leader(numbers):
     return leaders
 
 
-print(array_leader([1,2,3,4,0]))
-print(array_leader([-36,-12,-27]))
+""" print(array_leader([1,2,3,4,0]))
+print(array_leader([-36,-12,-27])) """
 
 
 def array_leader1(numbers):
@@ -26,8 +26,9 @@ def array_leader2(numbers):
         if num > sum(sub_lst):
             leaders.append(num)
             numbers.remove(num)
-        if len(sub_lst) == 1 and sum(sub_lst) > 0:
-            leaders.append(sum(sub_lst))
+            print(numbers)
+        elif len(sub_lst) == 1 and num > 0:
+            leaders.append(num)
     return leaders
 
 
