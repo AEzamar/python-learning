@@ -1,9 +1,9 @@
-import functools
+from functools import reduce
 def array_leader(numbers):
     leader = numbers[0]
     for num in numbers:
         sub_arr = numbers[num:-1]
-        if num > functools.reduce(sub_arr, lambda curr, next: curr + next):
+        if num > reduce(sub_arr, lambda curr, next: curr + next):
             leader = numbers[num] 
 
 
