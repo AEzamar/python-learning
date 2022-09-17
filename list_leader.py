@@ -1,10 +1,10 @@
 #from functools import reduce
-def array_leader(numbers):
+def array_leader1(numbers):
     leaders = []
     for num in numbers:
         sub_arr = numbers[num:]
-        """ print(sub_arr)
-        print(sum(sub_arr)) """
+        print(sub_arr)
+        print(sum(sub_arr))
         if num > sum(sub_arr):
             leaders.append(num)
         elif len(sub_arr) == 1 and sum(sub_arr) > 0:
@@ -12,15 +12,11 @@ def array_leader(numbers):
     return leaders
 
 
-""" print(array_leader([1,2,3,4,0]))
-print(array_leader([-36,-12,-27])) """
-
-
-def array_leader1(numbers):
+def array_leader11(numbers):
     return [num for num in numbers if num > sum(numbers[num:])]
 
 
-def array_leader2(numbers):
+def array_leader12(numbers):
     leaders = []
     for num in numbers:
         sub_lst = numbers[num:]
@@ -34,11 +30,7 @@ def array_leader2(numbers):
     return leaders
 
 
-""" print(array_leader2([1,2,3,4,0]))
-print(array_leader2([-36,-12,-27])) """
-
-
-def array_leader3(numbers):
+def array_leader13(numbers):
     leaders = []
     #print(numbers)
     while len(numbers):
@@ -46,18 +38,13 @@ def array_leader3(numbers):
             leaders.append(numbers[0])
         del numbers[0]
         #print('Leaders 1:', leaders)
-        """ if len(numbers) == 1 and sum(numbers) > 0:
+        if len(numbers) == 1 and sum(numbers) > 0:
             leaders.append(sum(numbers))
-        print('Leaders 2:', leaders) """
+        print('Leaders 2:', leaders)
     return leaders
 
 
-print(array_leader3([1,2,3,4,0]))
-print(array_leader3([-36,-12,-27]))
-print(array_leader3([16, 17, 4, 3, 5, 2]))
-
-
-def array_leader4(numbers):
+def array_leader(numbers):
     leaders = []
     while len(numbers):
         if numbers[0] > sum(numbers[1:]):
@@ -66,6 +53,6 @@ def array_leader4(numbers):
     return leaders
 
 
-print(array_leader4([1,2,3,4,0]))
-print(array_leader4([-36,-12,-27]))
-print(array_leader4([16, 17, 4, 3, 5, 2]))
+print(array_leader([1,2,3,4,0]))
+print(array_leader([-36,-12,-27]))
+print(array_leader([16, 17, 4, 3, 5, 2]))
