@@ -34,8 +34,8 @@ def array_leader2(numbers):
     return leaders
 
 
-print(array_leader2([1,2,3,4,0]))
-print(array_leader2([-36,-12,-27]))
+""" print(array_leader2([1,2,3,4,0]))
+print(array_leader2([-36,-12,-27])) """
 
 
 def array_leader3(numbers):
@@ -47,3 +47,7 @@ def array_leader3(numbers):
         if len(numbers) == 1 and sum(numbers) > 0:
             leaders.append(sum(numbers))
     return leaders
+
+
+print(array_leader3([1,2,3,4,0]))
+print(array_leader3([-36,-12,-27]))
