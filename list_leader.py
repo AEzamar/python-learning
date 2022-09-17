@@ -44,7 +44,7 @@ def array_leader3(numbers):
     while len(numbers):
         if numbers[0] > sum(numbers[1:]):
             leaders.append(numbers[0])
-        numbers.remove(numbers[0])
+        del numbers[0]
         if len(numbers) == 1 and sum(numbers) > 0:
             leaders.append(sum(numbers))
     return list(set(leaders))
