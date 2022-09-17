@@ -41,7 +41,6 @@ print(array_leader2([-36,-12,-27])) """
 def array_leader3(numbers):
     leaders = []
     print(numbers)
-    print('Sub list:', numbers[1:])
     while len(numbers):
         if numbers[0] > sum(numbers[1:]):
             leaders.append(numbers[0])
@@ -53,6 +52,6 @@ def array_leader3(numbers):
     return list(set(leaders))
 
 
-print(array_leader3([1,2,3,4,0]))
-print(array_leader3([-36,-12,-27]))
+""" print(array_leader3([1,2,3,4,0]))
+print(array_leader3([-36,-12,-27])) """
 print(array_leader3([16, 17, 4, 3, 5, 2]))
