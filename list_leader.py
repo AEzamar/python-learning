@@ -52,3 +52,4 @@ def array_leader3(numbers):
 
 print(array_leader3([1,2,3,4,0]))
 print(array_leader3([-36,-12,-27]))
+print(array_leader3([16, 17, 4, 3, 5, 2]))
