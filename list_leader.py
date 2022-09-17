@@ -38,8 +38,12 @@ print(array_leader2([1,2,3,4,0]))
 print(array_leader2([-36,-12,-27]))
 
 
-def array_leader(numbers):
+def array_leader3(numbers):
     leaders = []
     while len(numbers):
-        if numbers[0] > numbers[1:]:
+        if numbers[0] > sum(numbers[1:]):
             leaders.append(numbers[0])
+        numbers.remove(numbers[0])
+        if len(numbers) == 1 and sum(numbers) > 0:
+            leaders.append(sum(numbers))
+    return leaders
