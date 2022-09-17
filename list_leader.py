@@ -46,9 +46,9 @@ def array_leader3(numbers):
             leaders.append(numbers[0])
         del numbers[0]
         print('Leaders 1:', leaders)
-        if len(numbers) == 1 and sum(numbers) > 0:
+        """ if len(numbers) == 1 and sum(numbers) > 0:
             leaders.append(sum(numbers))
-        print('Leaders 2:', leaders)
+        print('Leaders 2:', leaders) """
     return leaders
 
 
