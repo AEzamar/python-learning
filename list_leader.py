@@ -49,7 +49,7 @@ def array_leader3(numbers):
         if len(numbers) == 1 and sum(numbers) > 0:
             leaders.append(sum(numbers))
         print('Leaders 2:', leaders)
-    return list(set(leaders))
+    return leaders
 
 
 """ print(array_leader3([1,2,3,4,0]))
