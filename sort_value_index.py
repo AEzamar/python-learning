@@ -22,3 +22,7 @@ print(sort_by_value_and_index([23, 2, 3, 4, 5]))
 """ print(math.sqrt(4))
 print(math.sqrt(9))
 print(math.sqrt(23)) """
+
+
+def sort_by_value_and_index1(lst):
+    return [ele * i for (i, ele) in enumerate(lst)]]
