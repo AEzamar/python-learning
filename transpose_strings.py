@@ -1,7 +1,8 @@
 def transpose_two_strings(arr):
     transposed = ""
-    for char, ch in (arr[0], arr[1]):
-        transposed += f"{char} {ch}\n"
+    transposed += [(char, chaar) for char, chaar in (arr[0], arr[1])]
+    """ for char in arr[0]:
+        transposed += f"{char}\n" """
     return transposed.rstrip()
 
 
