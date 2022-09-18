@@ -56,3 +56,8 @@ def array_leader(numbers):
 print(array_leader([1,2,3,4,0]))
 print(array_leader([-36,-12,-27]))
 print(array_leader([16, 17, 4, 3, 5, 2]))
+
+
+#User submitted solution
+""" def array_leaders(numbers):
+    return [n for (i,n) in enumerate(numbers) if n>sum(numbers[(i+1):])] """
