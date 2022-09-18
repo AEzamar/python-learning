@@ -1,8 +1,8 @@
 def transpose_two_strings(arr):
     i = 0
     transposed = ""
-    for char, ch in zip(arr[0], arr[1])
-        transposed += char, ch
+    for char in zip(arr[0], arr[1]):
+        transposed += str(char)
     return transposed
 
 
