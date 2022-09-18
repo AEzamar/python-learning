@@ -7,3 +7,5 @@ def transpose_two_strings(arr):
 
 
 print(transpose_two_strings(['Hello', 'World']))
+
+#[(title, year) for (title, year) in movies if year >= 2000]
