@@ -5,7 +5,7 @@ def transpose_two_strings(arr):
     #len_diff = len(arr[0]) - len(arr[1])
     """ for i in range(len(arr[0])):
         transposed += f"{arr[0][i]} {arr[1][i]}\n"  """
-    [(char, chaar) for char in arr[0]]
+    [(char, chaar) for char in arr[0], chaar in arr[1]]
     return transposed.rstrip()
 
 
