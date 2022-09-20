@@ -4,9 +4,11 @@ def transpose_two_strings(arr):
     """ for i in range(len(arr[0])):
         transposed += f"{arr[0][i]} {arr[1][i]}\n"  """
     #transposed += str([(char, chaar) for char in arr[0] for chaar in arr[1]])
-    for char in zip(arr[0], arr[1]):
-        transposed += '\n'
-        transposed += f"{str(char)}"
+    """ for char in zip(arr[0], arr[1]): """
+    """     transposed += '\n' """
+    """     transposed += f"{str(char)}" """
+    for i in range(len(arr[0]) > len(arr[1]) or len(arr[1]) > len(arr[0])):
+        print(arr[0][i])
     return transposed.lstrip()
 
 
