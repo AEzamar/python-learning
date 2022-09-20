@@ -4,7 +4,9 @@ def transpose_two_strings(arr):
     main_len += len(arr[0]) if len(arr[0]) > len(arr[1]) else len(arr[1])
     for i in range(main_len):
         transposed += '\n'
-        transposed += f"{arr[0][i]} {arr[1][i]}" """
+        transposed += f"{arr[0][i]} {arr[1][i]}"
+        if arr[0][i] or arr[1][i] == None:
+            transposed += " " """
     for char in zip(arr[0], arr[1]):
         transposed += '\n'
         transposed += str(char)
