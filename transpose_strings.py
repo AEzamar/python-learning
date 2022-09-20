@@ -8,7 +8,7 @@ def transpose_two_strings(arr):
     #transposed += str([(char, chaar) for char in arr[0] for chaar in arr[1]])
     for char in zip(arr[0], arr[1]):
         transposed += '\n'
-        transposed += f"{char}"
+        transposed += f"{str(char)}"
     return transposed.lstrip()
 
 
