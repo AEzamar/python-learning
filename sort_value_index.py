@@ -8,8 +8,7 @@ from xml.dom.minidom import Element
 
 #sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
-    return sorted(enumerate(lst), key = sort_by_product(i, ele):
-        return ele * (i + 1))
+    return sorted(enumerate(lst), key = lambda i, ele: ele * (i + 1))
     #new_lst = sorted(enumerate(lst), key=lambda i, ele: ele * i)
     """ print(new_lst)
     product_lst = [num * (i + 1) for i, num in enumerate(lst)]
