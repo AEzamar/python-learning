@@ -1,16 +1,15 @@
 import math
+from xml.dom.minidom import Element
 
 
 """ def sort_by_product(i, ele):
     return ele * i """
 
 
-sort_by_product = lambda i, ele: ele * (i + 1)
+#sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
-    for i, ele in enumerate(lst):
-        print(i + 1, ele)
-
-    #return sorted(enumerate(lst), key = sort_by_product)
+    return sorted(enumerate(lst), key = sort_by_product(i, ele):
+        return ele * (i + 1))
     #new_lst = sorted(enumerate(lst), key=lambda i, ele: ele * i)
     """ print(new_lst)
     product_lst = [num * (i + 1) for i, num in enumerate(lst)]
