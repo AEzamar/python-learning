@@ -30,3 +30,4 @@ print(math.sqrt(23)) """
 
 def sort_by_value_and_index1(lst):
     return [ele * (i + 1) for (i, ele) in enumerate(lst)]
+
