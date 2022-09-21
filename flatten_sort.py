@@ -3,7 +3,7 @@ def flatten_and_sort(array):
     for i in range(len(array)):
         flat_arr += array[i] """
     flat_arr = []
-    [(flat_arrr.append(array[i])) for i in range(len(array))]   
+    [flat_arr.append(num) for num in array]   
     flat_arr.sort()
     return flat_arr
 
