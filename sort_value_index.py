@@ -1,5 +1,4 @@
 import math
-from xml.dom.minidom import Element
 
 
 """ def sort_by_product(i, ele):
