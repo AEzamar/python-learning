@@ -1,7 +1,7 @@
 def flatten_and_sort(array):
     flat_arr = []
-    for i in range(len(array)):
-        flat_arr += array[i]  
+    for num in array:
+        flat_arr += num  
     flat_arr.sort()
     return flat_arr
 
