@@ -4,6 +4,8 @@ import math
 """ def sort_by_product(i, ele):
     return ele * i """
 
+def multiply(x, y):
+    return x * y
 
 #sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
