@@ -4,6 +4,7 @@ import math
 """ def sort_by_product(i, ele):
     return ele * i """
 
+
 def multiply(x, y):
     return x * y
 
