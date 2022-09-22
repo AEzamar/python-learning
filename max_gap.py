@@ -3,14 +3,10 @@ def max_gap(numbers):
     diff_lst = []
     numbers_copy.sort(reverse=True)
     while len(numbers_copy):
-        #diff = numbers_copy[0] - numbers_copy[1]
-        #print(numbers_copy)
         diff_lst.append(numbers_copy[0] - numbers_copy[1])
         del numbers_copy[0]
         if len(numbers_copy) == 1:
             break
-    """ print(numbers_copy)
-    print(diff_lst) """
     return max(diff_lst)
 
 
