@@ -1,7 +1,8 @@
 def product_array(numbers):
     product_arr = []
     exclusion = 0
-    for num in numbers:
-        if num != numbers[exclusion]:
-            
+    for i in range(len(numbers)):
+        copy_arr = numbers[:]
+        del numbers[exclusion]
+                    
     return product_arr
