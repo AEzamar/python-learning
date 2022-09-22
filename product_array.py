@@ -10,3 +10,4 @@ def product_array(numbers):
 
 print(product_array([1, 2, 5]))
 print(product_array([3, 27, 4, 2]))
+print(product_array([13,10,5,2,9]))
