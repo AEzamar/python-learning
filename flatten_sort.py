@@ -6,3 +6,9 @@ def flatten_and_sort(array):
     return flat_arr
 
 print(flatten_and_sort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]))
+
+
+#User submitted solution
+""" from itertools import chain
+def flatten_and_sort(array):
+    return sorted((chain(*array))) """
