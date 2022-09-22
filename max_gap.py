@@ -1,10 +1,11 @@
 def max_gap(numbers):
+    numbers_copy = numbers[:]
     diff_lst = []
-    numbers.sort(reverse=True)
-    diff = numbers[0] - numbers[1]
-    while len(numbers):
+    numbers_copy.sort(reverse=True)
+    diff = numbers_copy[0] - numbers_copy[1]
+    while len(numbers_copy):
         diff_lst.append(diff)
-        del numbers[0]
+        del numbers_copy[0]
     return max(diff_lst)
 
 
