@@ -12,3 +12,4 @@ def max_gap(numbers):
 
 print(max_gap([13, 3, 5]))
 print(max_gap([13,10,2,9,5]))
+print(max_gap([24,299,131,14,26,25]))
