@@ -11,3 +11,8 @@ def is_nice(arr):
 
 print(is_nice([2, 10, 9, 3]))
 print(is_nice([4, 2, 1]))
+
+
+def is_nice(arr):
+    nice_arr = []
+    [num for num in arr if num + 1 or num - 1 in arr]
