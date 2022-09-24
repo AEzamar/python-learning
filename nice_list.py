@@ -9,8 +9,8 @@ def is_nice(arr):
     return True if nice_count == len(arr) else False
 
 
-print(is_nice([2, 10, 9, 3]))
-print(is_nice([4, 2, 1]))
+""" print(is_nice([2, 10, 9, 3]))
+print(is_nice([4, 2, 1])) """
 
 
 def is_nice1(arr):
@@ -21,5 +21,6 @@ def is_nice1(arr):
     return True if len(nice_arr) == len(arr) else False
     
 
-
 print(is_nice1([4, 2, 1]))
+print(is_nice1([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+print(is_nice1([2, 10, 9, 3]))
