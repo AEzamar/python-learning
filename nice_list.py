@@ -15,7 +15,7 @@ print(is_nice([4, 2, 1]))
 
 def is_nice1(arr):
     nice_arr = []
-    if len([num for num in arr if num + 1 or num - 1 in arr]) == len(arr):
+    if len([num for num in arr if (num + 1) or (num - 1) in arr]) == len(arr):
         return True
     else:
         return False
