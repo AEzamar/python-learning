@@ -21,15 +21,15 @@ def is_nice1(arr):
     return True if len(nice_arr) == len(arr) else False
     
 
-print(is_nice1([4, 2, 1]))
+""" print(is_nice1([4, 2, 1]))
 print(is_nice1([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
-print(is_nice1([2, 10, 9, 3]))
+print(is_nice1([2, 10, 9, 3])) """
 
 
 def is_nice2(arr):
     arr_copy = arr[:]
-    filtered_arr = filter(lambda num: num + 1 or num - 1 in arr, arr_copy)
-    return filtered_arr
+    filtered_arr = filter(lambda num: num + 1 in arr, arr_copy)
+    return list(filtered_arr)
 
 
 print(is_nice2([4, 2, 1]))
