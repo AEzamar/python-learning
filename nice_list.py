@@ -19,3 +19,6 @@ def is_nice1(arr):
         return True
     else:
         return False
+
+
+print(is_nice1([4, 2, 1]))
