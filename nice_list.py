@@ -5,6 +5,8 @@ def is_nice(arr):
             nice_count += 1
         elif num - 1 in arr:
             nice_count += 1
+        else:
+            return False
     return True if nice_count == len(arr) else False
 
 
