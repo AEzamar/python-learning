@@ -18,13 +18,12 @@ def is_nice1(arr):
     nice_arr = []
     nice_arr += [num for num in arr if num + 1 in arr]
     nice_arr += [num for num in arr if num - 1 in arr]
-    print(nice_arr)
-    return True if len(nice_arr) == len(arr) else False
+    return True if len(list(set(nice_arr))) == len(arr) else False
     
 
 #print(is_nice1([4, 2, 1]))
-#print(is_nice1([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
-print(is_nice1([2, 10, 9, 3]))
+print(is_nice1([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+#print(is_nice1([2, 10, 9, 3]))
 
 
 def is_nice2(arr):
