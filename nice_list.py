@@ -7,7 +7,7 @@ def is_nice(arr):
             nice_count += 1
         else:
             return False
-    return True if nice_count == len(arr) else False
+    return True 
 
 
 print(is_nice([2, 10, 9, 3]))
