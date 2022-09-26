@@ -1,9 +1,9 @@
 def arr_adder(arr):
     arr_st = ""
-    for row in range(len(arr)):
-        arr_st += ' '
-        for col in range(len(arr[0])):
+    for row in range(len(arr[0])):
+        for col in range(len(arr)):
             arr_st += str(arr[col][row])
+        arr_st += ' '
     return arr_st.lstrip()
 
 
