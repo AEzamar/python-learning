@@ -25,3 +25,12 @@ print(arr_adder([[ 'T', 'M', 'i', 't', 'p', 'o', 't', 'c' ],
   [ '', 'r', '', '', 'e', '', '', '' ],
   [ '', 'i', '', '', '', '', '', '' ],
   [ '', 'a', '', '', '', '', '', '' ]]))
+
+
+#User submitted solutions
+""" def arr_adder(arr):
+    return ' '.join(map(''.join, zip(*arr))) """
+
+#Another similar solution but without map
+""" def arr_adder(arr): """
+"""     return ' '.join(''.join(col) for col in zip(*arr)) """
