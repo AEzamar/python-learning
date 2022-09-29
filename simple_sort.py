@@ -1,6 +1,5 @@
 def sortme(names):
-    names.sort()
-    return names
+    return sorted(names)
 
 
 print(sortme(["one", "two", "three"]))
