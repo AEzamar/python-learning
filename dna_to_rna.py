@@ -1,6 +1,5 @@
-from re import sub
 def dna_to_rna(dna):
-    return sub('T', 'U', dna)
+    return dna.replace('T', 'U')
 
 
 print(dna_to_rna('GCAT'))
