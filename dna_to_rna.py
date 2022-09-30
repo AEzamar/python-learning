@@ -1,5 +1,5 @@
 def dna_to_rna(dna):
-    return 'U'.replace('T', dna)
+    return dna.replace('/T/g', 'U')
 
 
 print(dna_to_rna('GCAT'))
