@@ -1,4 +1,5 @@
 def is_all_possibilities(arr = []):
+    return filter(lambda i , item: item == i, enumerate(arr))
     arr.sort()
     possib_count = 0
     for i in range(len(arr)):
