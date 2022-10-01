@@ -1,5 +1,5 @@
 def is_all_possibilities(arr = []):
-    return filter(lambda i , item: item == i, enumerate(arr))
+    return True if len(filter(lambda i , item: item == i, enumerate(arr))) == len(arr) else False
     arr.sort()
     possib_count = 0
     for i in range(len(arr)):
