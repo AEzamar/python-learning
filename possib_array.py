@@ -1,9 +1,9 @@
 def is_all_possibilities(arr = []):
     arr.sort()
     for i in arr:
-        if i in arr[i]:
+        if i == arr[i]:
             return True
-        else:
+        elif i != arr[i]:
             return False
 
 
