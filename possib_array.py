@@ -2,7 +2,6 @@ def is_all_possibilities(arr = []):
     arr.sort()
     possib_count = 0
     for i in range(len(arr)):
-        #print('i:', i, 'Arr[i]:', arr[i])
         if i == arr[i]:
             possib_count += 1
     return True if possib_count == len(arr) else False
