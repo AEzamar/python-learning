@@ -1,5 +1,5 @@
 def is_all_possibilities(arr = []):
-    indexed_arr = [i for i in range(len(arr)) if i in arr]
+    return True if len([i for i in range(len(arr)) if i in arr]) == len(arr) else False
     print(indexed_arr)
     #return True if len(list(filter(lambda i, item: i == item, enumerate(arr)))) == len(arr) else False
     """ arr.sort()
