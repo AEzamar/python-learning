@@ -1,11 +1,13 @@
 def is_all_possibilities(arr = []):
-    return True if len(list(filter(lambda i, item: i == item, enumerate(arr)))) == len(arr) else False
-    arr.sort()
+    indexed_arr = [i for i in range(len(arr)) if i in arr]
+    print(indexed_arr)
+    #return True if len(list(filter(lambda i, item: i == item, enumerate(arr)))) == len(arr) else False
+    """ arr.sort()
     possib_count = 0
     for i in range(len(arr)):
         if i == arr[i]:
             possib_count += 1
-    return True if possib_count == len(arr) else False
+    return True if possib_count == len(arr) else False """
 
 
 print(is_all_possibilities([1, 3, 2, 0]))
