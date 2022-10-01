@@ -5,7 +5,6 @@ def is_all_possibilities(arr = []):
         #print('i:', i, 'Arr[i]:', arr[i])
         if i == arr[i]:
             possib_count += 1
-
     return True if possib_count == len(arr) else False
 
 
