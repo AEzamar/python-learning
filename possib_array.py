@@ -1,9 +1,7 @@
 def is_all_possibilities(arr = []):
     arr.sort()
-    for i in arr:
-        print('i:', i, 'Arr[i]:', arr[i])
-        if i == arr[i]:
-            
+    for i in range(len(arr)):
+        
 
 
 print(is_all_possibilities([1, 3, 2, 0]))
