@@ -1,12 +1,14 @@
 def is_all_possibilities(arr = []):
     arr.sort()
-    """ for i in range(len(arr)):
-        print('i:', i, 'Arr[i]:', arr[i])
-        if i != arr[i]:
-            return False
-        else:
-            return True """
+    possib_count = 0
+    for i in range(len(arr)):
+        #print('i:', i, 'Arr[i]:', arr[i])
+        if i == arr[i]:
+            possib_count += 1
+
+    return True if possib_count == len(arr) else False
 
 
 print(is_all_possibilities([1, 3, 2, 0]))
+print(is_all_possibilities([0, 2, 1, 3]))
 print(is_all_possibilities([4, 2, 1, 0]))
