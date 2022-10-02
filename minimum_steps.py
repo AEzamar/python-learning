@@ -5,9 +5,9 @@ def minimum_steps(numbers, value):
     numbers.sort()
     print(numbers)
     while total < value:
-        total += numbers[0] + numbers[1]
-        del numbers[0]
         steps += 1
+        total += numbers[0] + numbers[1]
+        del numbers[0], numbers[1]
         print(total)
     return steps
 
