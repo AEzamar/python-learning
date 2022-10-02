@@ -4,12 +4,12 @@ def minimum_steps(numbers, value):
     steps = 0
     unique_numbers = list(set(numbers))
     numbers.sort()
-    print(numbers)
+    #print(numbers)
     while total < value:
-        steps += 1
         total += numbers[0]
         del numbers[0]
         #print(numbers)
+        steps += 1
         #print(total)
     return steps
 
