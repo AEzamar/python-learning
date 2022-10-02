@@ -5,18 +5,21 @@ def minimum_steps(numbers, value):
     unique_numbers = list(set(numbers))
     numbers.sort()
     print(numbers)
-    for i in range(len(numbers)):
+    """ for i in range(len(numbers)):
         steps += 1
         total += numbers[i] + numbers[i + 1]
         del numbers[0]
         if total > value:
-            break
-    """ while total <= value:
+            break """
+
+    while total < value:
         steps += 1
         total += numbers[0] + numbers[1]
-        del numbers[0]
+        del numbers[0], numbers[1]
+        if len(numbers) == 1:
+            total += numbers[0]
         print(numbers)
-        print(total) """
+        print(total)
     return steps
 
 
