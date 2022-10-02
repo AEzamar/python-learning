@@ -1,19 +1,14 @@
-from functools import reduce
 def minimum_steps(numbers, value):
     total = 0
     steps = 0
     numbers_copy = numbers.copy()
     numbers_copy.sort()
-    #print('List', numbers_copy)
     while total < value:
         total += numbers_copy[0]
-        print(numbers_copy)
-        print('Total', total)
         del numbers_copy[0]
-        #print(numbers_copy)
-        #print(total)
         steps += 1
-        print('Steps:', steps)
+        if len(numbers_copy) == 1:
+            break
     return steps
 
 
