@@ -2,13 +2,13 @@ from functools import reduce
 def minimum_steps(numbers, value):
     total = 0
     steps = 0
-    unique_numbers = list(set(numbers))
-    numbers.sort()
+    numbers_copy = numbers.copy()
+    numbers_copy.sort()
     #print(numbers)
     while total < value:
-        total += numbers[0]
-        del numbers[0]
-        #print(numbers)
+        total += numbers_copy[0]
+        del numbers_copy[0]
+        #print(numbers_copy)
         steps += 1
         #print(total)
     return steps
