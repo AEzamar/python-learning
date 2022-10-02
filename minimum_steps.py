@@ -4,13 +4,16 @@ def minimum_steps(numbers, value):
     steps = 0
     numbers_copy = numbers.copy()
     numbers_copy.sort()
-    #print(numbers)
+    #print('List', numbers_copy)
     while total < value:
         total += numbers_copy[0]
+        print(numbers_copy)
+        print('Total', total)
         del numbers_copy[0]
         #print(numbers_copy)
-        steps += 1
         #print(total)
+        steps += 1
+        print('Steps:', steps)
     return steps
 
 
