@@ -1,13 +1,12 @@
 def minimum_steps(numbers, value):
     total = 0
     steps = 0
-    numbers_copy = numbers.copy()
-    numbers_copy.sort()
+    numbers.sort()
     while total < value:
-        total += numbers_copy[0]
-        del numbers_copy[0]
+        total += numbers[0]
+        del numbers[0]
         steps += 1
-        if len(numbers_copy) == 1:
+        if len(numbers) == 1:
             break
     return steps
 
