@@ -1,14 +1,14 @@
 from functools import reduce
+def ltd_redux(total, next):
+    
 def minimum_steps(numbers, value):
     total = 0
     steps = 0
     numbers.sort()
-    if total < value:
+    while total < value and len(numbers) > 1:
         total += numbers[0]
         del numbers[0]
         steps += 1
-        if total > value:
-            return steps
     return steps
 
 
