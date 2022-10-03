@@ -5,7 +5,7 @@ def minimum_steps(numbers, value):
     for num in numbers:
         if total >= value:
             return steps
-        else:
+        elif total < value:
             steps += 1
             total += num
     return steps
