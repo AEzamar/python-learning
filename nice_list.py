@@ -27,9 +27,10 @@ def is_nice1(arr):
 
 
 def is_nice2(arr):
-    arr_copy = arr[:]
-    filtered_arr = filter(lambda num: num + 1 in arr, arr_copy)
-    return list(filtered_arr)
-
+    nice_count = 0
+    for i in range(len(arr)):
+        if i + 1 in arr or i - 1 in arr:
+            nice_count += 1
+    return True if nice_count == arr.length else False
 
 print(is_nice2([4, 2, 1]))
