@@ -3,10 +3,11 @@ def minimum_steps(numbers, value):
     total = 0
     steps = 0
     for num in numbers:
-        total += num
-        steps += 1
         if total >= value:
-            break
+            return steps
+        else:
+            steps += 1
+            total += num
     return steps
     """ numbers.sort()
     while total < value and len(numbers) > 1:
