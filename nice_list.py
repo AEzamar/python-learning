@@ -29,8 +29,11 @@ def is_nice1(arr):
 def is_nice2(arr):
     nice_count = 0
     for i in range(len(arr)):
-        if i + 1 in arr or i - 1 in arr:
+        if (arr[i] + 1) in arr:
             nice_count += 1
-    return True if nice_count == arr.length else False
+        elif (arr[i] - 1 ) in arr:
+            nice_count += 1
+    return True if nice_count == len(arr) else False
 
 print(is_nice2([4, 2, 1]))
+print(is_nice2([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
