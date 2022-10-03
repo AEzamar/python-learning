@@ -1,14 +1,16 @@
+from functools import reduce
 def minimum_steps(numbers, value):
     total = 0
     steps = 0
     numbers.sort()
     print(total)
     while total < value:
-        total += numbers[0]
-        del numbers[0]
+        reduce(lambda total, next: total + next, numbers)
+        steps += 1
+        """ del numbers[0]
         steps += 1
         if len(numbers) == 1:
-            break
+            break """
     return steps
 
 
