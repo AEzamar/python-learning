@@ -2,11 +2,11 @@ from functools import reduce
 def minimum_steps(numbers, value):
     total = numbers[0]
     steps = 0
-    while len(numbers):
+    while len(numbers) > 1:
             total += numbers[0]
             del numbers[0]
             steps += 1
-            if total >= value:
+            if value <= total:
                 break
     return steps
     """ numbers.sort()
