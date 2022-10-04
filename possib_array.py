@@ -1,4 +1,5 @@
 def is_all_possibilities(arr = []):
+    if len(arr) == 0: return False
     return True if len([i for i in range(len(arr)) if i in arr]) == len(arr) else False
     print(indexed_arr)
     #return True if len(list(filter(lambda i, item: i == item, enumerate(arr)))) == len(arr) else False
@@ -13,3 +14,4 @@ def is_all_possibilities(arr = []):
 print(is_all_possibilities([1, 3, 2, 0]))
 print(is_all_possibilities([0, 2, 1, 3]))
 print(is_all_possibilities([4, 2, 1, 0]))
+print(is_all_possibilities([]))
