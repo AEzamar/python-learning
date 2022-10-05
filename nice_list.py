@@ -35,6 +35,7 @@ def is_nice2(arr):
             nice_count += 1
     return True if nice_count == len(arr) else False
 
+
 print(is_nice2([4, 2, 1]))
 print(is_nice2([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
 print(is_nice2([2, 10, 9, 3]))
