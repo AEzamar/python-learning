@@ -36,6 +36,15 @@ def is_nice2(arr):
     return True if nice_count == len(arr) else False
 
 
-print(is_nice2([4, 2, 1]))
+""" print(is_nice2([4, 2, 1]))
 print(is_nice2([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
-print(is_nice2([2, 10, 9, 3]))
+print(is_nice2([2, 10, 9, 3])) """
+
+
+def is_nice3(arr):
+    return True if len([num for num in arr if num + 1 in arr or num - 1 in arr]) == len(arr) else False
+
+
+print(is_nice3([4, 2, 1]))
+print(is_nice3([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
+print(is_nice3([2, 10, 9, 3]))
