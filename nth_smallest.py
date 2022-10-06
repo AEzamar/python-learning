@@ -1,6 +1,8 @@
 def nth_smallest(arr, pos):
     """sorted_arr = sorted(arr)
     return""" 
+    for (i + 1) in range(len(arr)):
+
     return [i + 1 for i in range(len(sorted(arr)))]
 
 
