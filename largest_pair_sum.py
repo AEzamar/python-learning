@@ -9,5 +9,5 @@ print(largest_pair_sum([1, 2, 3, 4, 6, -1, 2]))
 
 
 #User submitted solution
-def largest_pair_sum(numbers):
-    return sum(sorted(numbers[-2:]))
+""" def largest_pair_sum(numbers):
+    return sum(sorted(numbers[-2:])) """
