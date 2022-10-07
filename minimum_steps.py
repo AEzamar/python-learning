@@ -30,7 +30,9 @@ def minimum_steps1(numbers, value):
     while value > total:
         total += numbers.pop(0)
         steps += 1
-    return steps
+        if value <= total:
+            return steps
+    #return steps
 
 
 print(minimum_steps1([4,6,3], 7))
