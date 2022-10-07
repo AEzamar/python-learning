@@ -1,10 +1,11 @@
 def nth_smallest(arr, pos):
-    #return [i for i in range(len(arr)) if arr[i] == arr[pos]]
-    for i in range(len(arr)):
-        position = arr[i]
-        return arr[pos] == arr[position]
+    #return [arr[i] for i in range(len(arr)) if arr[i + 1] == arr[pos]]
     sorted_arr = sorted(arr)
-    print(sorted_arr[pos])
+    for i in range(len(sorted_arr)):
+        #print('Index of 1',sorted_arr[i + 1])
+        if sorted_arr[i + 1] == sorted_arr[pos]:
+            return sorted_arr[i]
+    #print(sorted_arr[pos])
     #return [i + 1 for i in range(len(sorted(arr)))]
 
 
