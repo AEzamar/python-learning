@@ -49,3 +49,4 @@ def is_nice3(arr):
 print(is_nice3([4, 2, 1]))
 print(is_nice3([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
 print(is_nice3([2, 10, 9, 3]))
+print(is_nice3([2, 2, 3, 3, 3]))
