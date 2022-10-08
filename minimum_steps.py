@@ -34,3 +34,9 @@ print(minimum_steps1([4,6,3], 7))
 print(minimum_steps1([10,9,9,8], 17))
 print(minimum_steps1([8,9,10,4,2], 23))
 print(minimum_steps1([19,98,69,28,75,45,17,98,67], 464))
+
+
+def minimum_steps2(numbers, value):
+    steps = 0
+    sum = numbers[0] + numbers[1]
+    if sum >= value: return 1 
