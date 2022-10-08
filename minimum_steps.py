@@ -10,12 +10,6 @@ def minimum_steps(numbers, value):
         if total >= value:
             break
     return steps
-    """ numbers.sort()
-    while total < value and len(numbers) > 1:
-        total += numbers[0]
-        del numbers[0]
-        steps += 1
-    return steps """
 
 
 """ print(minimum_steps([4,6,3], 7))
