@@ -42,6 +42,7 @@ print(is_nice2([2, 10, 9, 3])) """
 
 
 def is_nice3(arr):
+    if len(arr) < 1: return False
     return True if len([num for num in arr if num + 1 in arr or num - 1 in arr]) == len(arr) else False
 
 
