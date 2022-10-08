@@ -39,14 +39,16 @@ print(minimum_steps1([19,98,69,28,75,45,17,98,67], 464)) """
 def minimum_steps2(numbers, value):
     steps = 0
     sum = numbers[0] + numbers[1]
-    for i in range(len(numbers)):
-        if sum < value:
-            steps += 1
-            del numbers[0]
-            del numbers[1]
-            sum += numbers[0]
-        else:
-            return steps
+    print(sum)
+    if sum >= value: return 1
+    #for i in range(len(numbers)):
+    elif sum < value:
+        steps += 1
+        del numbers[0]
+        del numbers[1]
+        sum += numbers[0]
+    else:
+        return steps
     return steps
 
 
