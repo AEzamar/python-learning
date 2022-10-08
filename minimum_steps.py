@@ -27,10 +27,11 @@ print(minimum_steps([19,98,69,28,75,45,17,98,67], 464)) """
 def minimum_steps1(numbers, value):
     total = numbers.pop(0)
     steps = 0
+    print('Initial total', total)
     while total < value:
         total += numbers.pop(0)
         steps += 1
-        if total > value:
+        if total >= value:
             return steps
     #return steps
 
