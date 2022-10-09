@@ -52,12 +52,12 @@ def minimum_steps2(numbers, value):
 
 def minimum_steps3(numbers, value):
     steps = 0
-    #sorted_numbers = sorted(numbers)
-    total = sorted(numbers)[0]
+    sorted_numbers = sorted(numbers)
+    total = sorted_numbers[0]
     while value > total:
         steps += 1
-        del sorted(numbers)[0]
-        total += sorted(numbers)[0]
+        del sorted_numbers[0]
+        total += sorted_numbers[0]
     return steps
 
 
