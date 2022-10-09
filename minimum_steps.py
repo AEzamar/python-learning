@@ -50,6 +50,15 @@ def minimum_steps2(numbers, value):
 #print(minimum_steps2([8,9,10,4,2], 23))
 
 
-def minimum_steps(numbers, value):
+def minimum_steps3(numbers, value):
     steps = 0
-    while numbers[0] + numberS[1] < value:
+    sorted_numbers = sorted(numbers)
+    total = sorted_numbers[0] + sorted_numbers[1]
+    while total < value:
+        steps += 1
+        del numbers[0]
+        total += numbers[0]
+    return steps
+
+
+print(minimum_steps3([8,9,10,4,2], 23))
