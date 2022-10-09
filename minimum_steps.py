@@ -1,7 +1,7 @@
 def minimum_steps(numbers, value):
     steps = 0
-    sorted_numbers = sorted(numbers)
     total = sorted_numbers[0]
+    sorted_numbers = sorted(numbers)
     while value > total:
         steps += 1
         del sorted_numbers[0]
