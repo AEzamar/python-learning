@@ -14,3 +14,13 @@ print(minimum_steps([10,9,9,8], 17))
 print(minimum_steps([8,9,10,4,2], 23))
 print(minimum_steps([19,98,69,28,75,45,17,98,67], 464))
 print(minimum_steps([4,6,3], 2))
+
+
+#User submitted solution
+#This is good, except for the variable names
+""" def minimum_steps(arr, n):
+    arr = sorted(arr)
+    s = 0
+    for i,v in enumerate(arr): 
+        s += v
+        if s >= n: return i """
