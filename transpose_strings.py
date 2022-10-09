@@ -8,11 +8,12 @@ def transpose_two_strings(arr):
         if arr[0][i] or arr[1][i] == None:
             transposed += " " """
     for char in zip(arr[0], arr[1]):
-        transposed += '\n'
         transposed += str(char)
-    return transposed.lstrip()
+        transposed += '\n'
+
+    return transposed.rstrip()
 
 
-print(transpose_two_strings(['Hello', 'World']))
+#print(transpose_two_strings(['Hello', 'World']))
 print(transpose_two_strings(['Hey', 'People']))
 #print(transpose_two_strings(['Tranpose', 'This']))
