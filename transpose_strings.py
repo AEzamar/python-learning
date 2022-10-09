@@ -7,10 +7,10 @@ def transpose_two_strings(arr):
         transposed += f"{arr[0][i]} {arr[1][i]}"
         if arr[0][i] or arr[1][i] == None:
             transposed += " " """
-    for char in zip(arr[0], arr[1]):
-        transposed += str(char)
+    string_zip = dict(zip(arr[0], arr[1]))
+    for key, value in string_zip.items():
+        transposed += str(f"{key} {value}")
         transposed += '\n'
-
     return transposed.rstrip()
 
 
