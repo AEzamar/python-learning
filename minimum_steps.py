@@ -47,4 +47,9 @@ def minimum_steps2(numbers, value):
     return steps
 
 
-print(minimum_steps2([8,9,10,4,2], 23))
+#print(minimum_steps2([8,9,10,4,2], 23))
+
+
+def minimum_steps(numbers, value):
+    steps = 0
+    while numbers[0] + numberS[1] < value:
