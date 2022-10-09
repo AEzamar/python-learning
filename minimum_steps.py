@@ -39,7 +39,7 @@ print(minimum_steps1([19,98,69,28,75,45,17,98,67], 464)) """
 def minimum_steps2(numbers, value):
     steps = 0
     sum = numbers[0] + numbers[1]
-    while sum < value and len(numbers) > 1:
+    while sum < value and len(sorted(numbers)) > 1:
         del numbers[0]
         del numbers[1]
         sum += numbers[0]
