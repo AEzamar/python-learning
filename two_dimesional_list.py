@@ -1,7 +1,8 @@
 def matrix(array):
     indexer = 0 
     for i in range(len(array)):
-        if array[indexer][i] < 0: array[indexer][i] = 0
+        array[indexer][i] = 0 if array[indexer][i] < 0 else array[indexer][i] = 1 
+        #if array[indexer][i] < 0: array[indexer][i] = 0
         #print(array[indexer][i])
         indexer += 1    
     return array
