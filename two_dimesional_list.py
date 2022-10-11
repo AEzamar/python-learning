@@ -1,10 +1,9 @@
 def matrix(array):
     indexer = 0 
     for i in range(len(array)):
-        print(array[indexer][i])
-        indexer += 1
-        """ for j in range(len(array)):
-            print(array[j][i]) """
+        if array[indexer][i] < 0: array[indexer][i] = 0
+        #print(array[indexer][i])
+        indexer += 1    
     return array
 
 
