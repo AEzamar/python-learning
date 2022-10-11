@@ -1,5 +1,5 @@
 def without_last(lst):
-    lst.pop()
+    lst.pop(-1)
     return lst
 
 
