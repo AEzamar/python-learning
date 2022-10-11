@@ -1,6 +1,7 @@
 def without_last(lst):
-    lst.pop(-1)
-    return lst
+    lst_copy = lst.copy()
+    lst_copy.pop(-1)
+    return lst_copy
 
 
 print(without_last([1, 2, 3, 4, 5]))
