@@ -12,3 +12,13 @@ print(matrix([[-1, 4, -5, -9, 3],
             [3, 5, 4, -9, -1], 
             [1, 5, -7, -8, -9], 
             [-3, 2, 1, -5, 6]]))
+
+
+#User submitted solution
+""" def matrix(arr):
+    for z in range( len(arr) ):
+        if arr[z][z] < 0:
+            arr[z][z] = 0
+        else:
+            arr[z][z] = 1
+    return arr """
