@@ -1,8 +1,8 @@
 def solve(arr):
     arr_copy = arr.copy()
-    min_max_arr = []
+    max_min_arr = []
     while len(sorted(arr_copy, reverse=True)):
-        min_max_arr.append(arr_copy.pop(0))
+        max_min_arr.append(arr_copy.pop(0))
         #arr_copy.pop(0)
     return arr_copy
 
