@@ -1,4 +1,3 @@
-from distutils.spawn import spawn
 import math
 def solve(arr):
     arr_copy = arr.copy()
@@ -9,5 +8,5 @@ def solve(arr):
     return arr
 
 
-print(solve(15, 12, 10, 11, 7))
+print(solve([15, 12, 10, 11, 7]))
         
