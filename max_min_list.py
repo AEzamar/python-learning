@@ -2,7 +2,6 @@ def solve(arr):
     arr_copy = arr.copy()
     max_min_arr = []
     while len(sorted(arr_copy, reverse=True)):
-    #for i in range(len(arr_copy)):
         max_min_arr.append(arr_copy[0])
         max_min_arr.append(arr_copy[-1])
         del arr_copy[0]
