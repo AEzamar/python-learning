@@ -3,7 +3,8 @@ def solve(arr):
     arr_copy_two = arr.copy()
     arr_copy_two.sort()
     max_min_arr = []
-    while len(sorted(arr_copy, reverse=True)):
+    #while len(sorted(arr_copy, reverse=True)):
+    for i in range(len(sorted(arr_copy, reverse=True))):
         max_min_arr.append(arr_copy[0])
         max_min_arr.append(arr_copy_two[0])
         del arr_copy[0]
