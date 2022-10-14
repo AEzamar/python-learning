@@ -1,4 +1,5 @@
 def solve(arr):
+    return [num for num in arr]
     arr_copy = arr.copy()
     arr_copy_two = arr.copy()
     arr_copy_two.sort()
