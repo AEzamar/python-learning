@@ -1,9 +1,10 @@
 def solve(arr):
-    sorted_arr = sorted(arr, reverse=True)
+    max_arr = sorted(arr, reverse=True)
+    min_arr = sorted(arr)
     max_min_arr = []
-    for i in range(len(sorted_arr)):
-        max_min_arr.append(sorted_arr[i])
-        max_min_arr.append(sorted_arr[-i])
+    for i in range(len(arr)):
+        max_min_arr.append(max_arr[i])
+        max_min_arr.append(min_arr[i])
     """ arr_copy = arr.copy()
     arr_copy_two = arr.copy()
     arr_copy_two.sort()
