@@ -5,8 +5,6 @@ def solve(arr):
     for i in range(len(arr)):
         max_min_arr.append(max_arr[i])
         max_min_arr.append(min_arr[i])
-        if len(max_min_arr) == len(arr): 
-            break
     return max_min_arr
 
 
