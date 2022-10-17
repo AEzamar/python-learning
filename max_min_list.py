@@ -1,6 +1,7 @@
 def solve(arr):
     max_arr = sorted(arr, reverse=True)
     min_arr = sorted(arr)
+    copy_arr = arr.copy()
     max_min_arr = []
     for i in range(len(arr)):
         if max_arr[i] and min_arr[i] not in max_min_arr:
