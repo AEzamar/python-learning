@@ -4,10 +4,11 @@ def solve(arr):
     copy_arr = sorted(arr, reverse=True)
     max_min_arr = []
     #for i in range(len(arr)):
-        if max_arr[i] and min_arr[i] not in max_min_arr:
-            max_min_arr.append(copy_arr[i])
+    while len(copy_arr):
+        if copy_arr[0] and copy_arr[-1] not in max_min_arr:
+            max_min_arr.append(copy_arr[0])
             del copy_arr[0]
-            max_min_arr.append(copy_arr[-i])
+            max_min_arr.append(copy_arr[-1])
             del copy_arr[-1]
     return max_min_arr
 
