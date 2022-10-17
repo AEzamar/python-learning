@@ -3,8 +3,8 @@ def solve(arr):
     min_arr = sorted(arr)
     copy_arr = sorted(arr, reverse=True)
     max_min_arr = []
-    #for i in range(len(arr)):
-    while len(copy_arr):
+    for i in range(len(copy_arr)):
+    #while len(copy_arr):
         if copy_arr[0] and copy_arr[-1] not in max_min_arr:
             max_min_arr.append(copy_arr[0])
             del copy_arr[0]
