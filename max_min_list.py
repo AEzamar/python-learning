@@ -6,10 +6,10 @@ def solve(arr):
     i = 0
     #for i in range(len(copy_arr)):
     while len(copy_arr):
-            max_min_arr.append(max_arr[i])
-            max_min_arr.append(min_arr[i])
-            i += 1
-            del copy_arr[0]
+        max_min_arr.append(max_arr[i])
+        max_min_arr.append(min_arr[i])
+        i += 1
+        del copy_arr[0]
     return max_min_arr
 
 
