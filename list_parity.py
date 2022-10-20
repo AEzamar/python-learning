@@ -6,6 +6,12 @@ def solve(arr):
             return positive_lst[i] or negative_lst[i]
 
 
-print(solve([1, -1, 2, -2, 3]))
+""" print(solve([1, -1, 2, -2, 3]))
 print(solve([1, 3, 2, -1, -3]))
-print(solve([-3, 1, 2, 3, -1, -4, -2]))
+print(solve([-3, 1, 2, 3, -1, -4, -2])) """
+
+def solve1(arr):
+    return [(-abs(ele) not in arr) for ele in arr]
+
+
+print(solve1([1, -1, 2, -2, 3]))
