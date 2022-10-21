@@ -18,11 +18,11 @@ print(solve([1, -1, 2, -2, 3, 3]))
 
 def find_ele(func, arr):
     for ele in arr:
-        return func(ele)
+        if func(ele): return ele
 
 
 def solve1(arr):
-    return find_ele(lambda item: item != -abs(item), arr)
+    return find_ele(lambda item: -abs(item) not in arr, arr)
     #return list(filter(lambda ele: ele != -abs(ele), arr))
     return [-abs(ele) not in arr for ele in arr]
 
