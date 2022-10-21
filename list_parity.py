@@ -22,7 +22,7 @@ def find_ele(func, arr):
 
 
 def solve1(arr):
-    return find_ele(lambda item: -abs(item) not in arr, arr)
+    return find_ele(lambda item: -abs(item) not in arr or abs(item) not in arr, arr)
     #return list(filter(lambda ele: ele != -abs(ele), arr))
     return [-abs(ele) not in arr for ele in arr]
 
