@@ -17,7 +17,8 @@ print(solve([1, -1, 2, -2, 3, 3]))
 
 
 def find_ele(func, arr):
-    return[func(ele) for ele in arr]
+    for ele in arr:
+        return func(ele)
 
 
 def solve1(arr):
