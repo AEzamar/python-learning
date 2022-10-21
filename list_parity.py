@@ -14,8 +14,8 @@ print(solve([-3, 1, 2, 3, -1, -4, -2]))
 print(solve([1, -1, 2, -2, 3, 3])) """
 
 def solve1(arr):
-    return list(filter(lambda ele: ele != -abs(ele), arr))
-    #return [-abs(ele) not in arr for ele in arr]
+    #return list(filter(lambda ele: ele != -abs(ele), arr))
+    return [-abs(ele) not in arr for ele in arr]
 
 
 print(solve1([1, -1, 2, -2, 3]))
