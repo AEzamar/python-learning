@@ -16,13 +16,13 @@ print(solve_long([-3, 1, 2, 3, -1, -4, -2]))
 print(solve_long([1, -1, 2, -2, 3, 3])) """
 
 
-def find_ele(func, arr):
-    for ele in arr:
-        if func(ele): return ele
+def find_item(func, arr):
+    for item in arr:
+        if func(item): return item
 
 
 def solve(arr):
-    return find_ele(lambda item: -abs(item) not in arr or abs(item) not in arr, arr)
+    return find_item(lambda item: -abs(item) not in arr or abs(item) not in arr, arr)
 
 
 print(solve([1, -1, 2, -2, 3]))
