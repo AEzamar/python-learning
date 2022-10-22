@@ -10,8 +10,9 @@ def solve(arr):
         max_min_arr.append(min_arr[i]) """
         print(max(arr))
         arr.pop(0)
-        print(min(copy_arr))
-        arr.pop()
+        print(min(arr))
+        del arr[0]
+        #arr.pop()
         #max_min_arr.append(arr.remove(max(arr)))
         #i += 1
         del copy_arr[0]
