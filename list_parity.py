@@ -29,3 +29,8 @@ print(solve([1, -1, 2, -2, 3]))
 print(solve([1, 3, 2, -1, -3]))
 print(solve([-3, 1, 2, 3, -1, -4, -2]))
 print(solve([1, -1, 2, -2, 3, 3]))
+
+
+#User submitted solution
+#I don't quite get this one, but it's one line, good lord
+#def solve(arr): return sum(set(arr))
