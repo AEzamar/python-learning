@@ -1,5 +1,5 @@
 def solve(arr):
-    return [ele == max(arr) and ele == min(arr) for ele in arr]
+    return [ele for ele in arr if ele == max(arr) or ele == min(arr)]
     max_arr = sorted(arr, reverse=True)
     min_arr = sorted(arr)
     copy_arr = sorted(arr)
