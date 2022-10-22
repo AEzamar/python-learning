@@ -4,8 +4,8 @@ def solve(arr):
     copy_arr = sorted(arr)
     max_min_arr = []
     while len(copy_arr):
-        max_min_arr.append(max(arr))
-        arr.pop(0)
+        max_min_arr.append(max(max_arr))
+        del max_arr[0]
         max_min_arr.append(min(min_arr))
         del min_arr[0]
         del copy_arr[0]
