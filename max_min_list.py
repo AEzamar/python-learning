@@ -1,5 +1,5 @@
 def solve(arr):
-    return [ele for ele in arr if ele == max(arr) or ele == min(arr)]
+    #return [ele for ele in arr if ele == max(arr) or ele == min(arr)]
     max_arr = sorted(arr, reverse=True)
     min_arr = sorted(arr)
     copy_arr = sorted(arr)
@@ -11,8 +11,8 @@ def solve(arr):
         max_min_arr.append(min_arr[i]) """
         print(max(arr))
         arr.pop(0)
-        print(min(arr))
-        del arr[0]
+        print(min(min_arr))
+        del min_arr[0]
         #arr.pop()
         #max_min_arr.append(arr.remove(max(arr)))
         #i += 1
