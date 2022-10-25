@@ -1,5 +1,10 @@
 import math
 
+def sort_product(ele, len):
+    multiplier = 1
+    for i in range(len):
+        ele * multiplier
+
 
 """ def sort_by_product(i, ele):
     return ele * i """
