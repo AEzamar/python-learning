@@ -4,6 +4,7 @@ def sort_product(ele, len):
     multiplier = 1
     for i in range(len):
         ele * multiplier
+        multiplier += 1
 
 
 """ def sort_by_product(i, ele):
@@ -15,7 +16,7 @@ def multiply(x, y):
 
 #sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
-    return sorted(enumerate(lst), key = lambda i, ele: ele * (i + 1))
+    return sorted(enumerate(lst), key = sort_product)
     #new_lst = sorted(enumerate(lst), key=lambda i, ele: ele * i)
     """ print(new_lst)
     product_lst = [num * (i + 1) for i, num in enumerate(lst)]
