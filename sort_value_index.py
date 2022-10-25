@@ -7,10 +7,6 @@ def sort_product(ele, len):
         multiplier += 1
 
 
-""" def sort_by_product(i, ele):
-    return ele * i """
-
-
 def multiply(x, y):
     return x * y
 
