@@ -9,14 +9,12 @@ def sort_product(ele, len):
 
 #sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
-    pass
-    #return sorted(enumerate(lst), key = sort_product)
-    #new_lst = sorted(enumerate(lst), key=lambda i, ele: ele * i)
-    """ print(new_lst)
+    new_lst = sorted(enumerate(lst), key=lambda i, ele: ele * i)
+    print(new_lst)
     product_lst = [num * (i + 1) for i, num in enumerate(lst)]
     print(product_lst)
     product_lst.sort()
-    return [math.sqrt(num)  for i, num in enumerate(product_lst)] """
+    return [math.sqrt(num) for i, num in enumerate(product_lst)]
     #return product_lst
 
 
@@ -32,4 +30,4 @@ def sort_by_value_and_index1(lst):
     return [ele * (i + 1) for (i, ele) in enumerate(lst)]
 
 
-print(sort_by_value_and_index1([23, 2, 3, 4, 5]))
+#print(sort_by_value_and_index1([23, 2, 3, 4, 5]))
