@@ -7,9 +7,6 @@ def sort_product(ele, len):
         multiplier += 1
 
 
-def multiply(x, y):
-    return x * y
-
 #sort_by_product = lambda i, ele: ele * (i + 1)
 def sort_by_value_and_index(lst):
     pass
