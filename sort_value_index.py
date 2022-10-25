@@ -6,7 +6,7 @@ def sort_by_value_and_index(lst):
     product_lst = [num * (i + 1) for i, num in enumerate(lst)]
     print(product_lst)
     product_lst.sort()
-    return [int(math.sqrt(num)) for i, num in enumerate(product_lst)]
+    return [num // (i + 1) for i, num in enumerate(product_lst)]
     #return product_lst
 
 
