@@ -1,4 +1,3 @@
-import math
 def sum_average(arr):
     return round(sum([(sum(subArr) / len(subArr)) for subArr in arr]))
 
