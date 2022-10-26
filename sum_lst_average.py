@@ -1,4 +1,3 @@
-from functools import reduce
 def sum_average(arr):
     return int(sum([(sum(subArr) / len(subArr)) for subArr in arr]))
 
