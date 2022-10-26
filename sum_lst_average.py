@@ -1,6 +1,6 @@
 from functools import reduce
 def sum_average(arr):
-    return int([reduce(lambda total, curr: total + curr, subArr) for subArr in arr]) / len(arr)
+    return sum([reduce(lambda total, curr: total + curr, subArr) for subArr in arr]) / len(arr)
 
 
 print(sum_average([[1, 2, 2, 1], [2, 2, 2, 1]]))
