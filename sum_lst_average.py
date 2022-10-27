@@ -1,5 +1,5 @@
 def sum_average(arr):
-    return round(sum([sum(subArr) / len(subArr) for subArr in arr]))
+    return int(sum([sum(subArr) / len(subArr) for subArr in arr]))
 
 
 print(sum_average([[1, 2, 2, 1], [2, 2, 2, 1]]))
