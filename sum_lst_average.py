@@ -1,6 +1,7 @@
 import math
 def sum_average(arr):
-    return round(sum([sum(subArr) / len(subArr) for subArr in arr]))
+    average_sum = sum([sum(subArr) / len(subArr) for subArr in arr])
+    return ceil(average_sum) if average_sum 
 
 
 print(sum_average([[1, 2, 2, 1], [2, 2, 2, 1]]))
