@@ -1,7 +1,7 @@
-from functools import reduce
+import math
 def sum_average(arr):
     #return round(reduce(lambda total, curr: total + curr, [sum(subArr) / len(subArr) for subArr in arr]))
-    return round(sum([sum(subArr) / len(subArr) for subArr in arr]))
+    return math.floor(sum([sum(subArr) / len(subArr) for subArr in arr]))
     #return math.ceil(average_sum) if average_sum > .5 else math.floor(average_sum)  
 
 
