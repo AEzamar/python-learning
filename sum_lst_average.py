@@ -1,4 +1,6 @@
 import math
+
+
 def sum_average(arr):
     return math.floor(sum([sum(subArr) / len(subArr) for subArr in arr]))
 
