@@ -14,7 +14,11 @@ def solve(arr):
         max_min_arr.append(min(copy_arr_2))
         copy_arr.pop()
         copy_arr_2.pop(0)
-        if len(max_min_arr) >= len(arr): return max_min_arr
+        if len(copy_arr) == 1:
+            max_min_arr.append(copy_arr.pop())
+        if len(copy_arr_2) == 1:
+            max_min_arr.append(copy_arr_2.pop())
+        #if len(max_min_arr) >= len(arr): return max_min_arr
     return max_min_arr
 
 
