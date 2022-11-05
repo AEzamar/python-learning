@@ -9,7 +9,9 @@ def solve(arr):
         max_min_arr.append(min(min_arr))
         min_arr.pop(0)
         del copy_arr[0] """
-        max_min_arr.append(copy_arr.pop()) and max_min_arr.append(copy_arr.pop(0))
+        max_min_arr.append(max(copy_arr))
+        max_min_arr.append(min(copy_arr))
+        copy_arr.pop() and copy_arr.pop(0)
         if len(max_min_arr) == len(arr): return max_min_arr
     return max_min_arr
 
