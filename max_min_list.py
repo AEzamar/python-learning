@@ -5,16 +5,12 @@ def solve(arr):
     copy_arr_2 = sorted(arr)
     max_min_arr = []
     while len(copy_arr):
-        """ max_min_arr.append(max(max_arr))
+        max_min_arr.append(max(max_arr))
         max_arr.pop()
         max_min_arr.append(min(min_arr))
         min_arr.pop(0)
-        del copy_arr[0] """
-        max_min_arr.append(max(copy_arr))
-        max_min_arr.append(min(copy_arr_2))
         copy_arr.pop()
-        copy_arr_2.pop(0)
-        if len(max_min_arr) >= len(arr): return max_min_arr
+        if len(max_min_arr) >= len(arr): break
     return max_min_arr
 
 
