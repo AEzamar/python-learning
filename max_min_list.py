@@ -14,7 +14,7 @@ def solve(arr):
 
 
 print(solve([15, 12, 10, 11, 7]))
-        
+ 
 
 def solve1(arr):
     return [max(arr) and min(arr) for item in arr]
