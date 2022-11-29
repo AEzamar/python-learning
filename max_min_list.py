@@ -9,7 +9,7 @@ def solve(arr):
         max_min_arr.append(min(min_arr))
         min_arr.pop(0)
         copy_arr.pop()
-        if len(max_min_arr) >= len(arr): break
+        if len(max_min_arr) >= len(arr): return max_min_arr
     return max_min_arr
 
 
